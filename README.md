@@ -4,16 +4,16 @@ Raspberry pi libraries and command line interface for control Watchdog for Raspb
 ## Usage
 
 ```bash
-~$ git clone https://github.com/SequentMicrosystems/wd-rpi.git
-~$ cd wd-rpi/
-~/wd-rpi$ sudo make install
+~$ git clone https://github.com/SequentMicrosystems/wdt-rpi.git
+~$ cd wdt-rpi/
+~/wdt-rpi$ sudo make install
 ```
 
 Now you can access all the functions of the Watchdog card through the "wdt" command.
 If you clone the repository, any update can be made with the following commands:
 
 ```bash
-~$ cd wd-rpi/  
-~/wd-rpi$ git pull
-~/wd-rpi$ sudo make install
+~$ cd wdt-rpi/  
+~/wdt-rpi$ git pull
+~/wdt-rpi$ sudo make install
 ```  
