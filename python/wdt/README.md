@@ -17,7 +17,9 @@ Reload the watchdog period.
 
 ### setDefaultPeriod(val)
 Set the period that will be use after watchdog reset the Raspberry and at power-up.
+
 val - default period in seconds
+
 This value is saved in non-volatile memory 
 
 ### getDefaultPeriod()
