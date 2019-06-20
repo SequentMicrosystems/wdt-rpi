@@ -1,5 +1,5 @@
 
-[![megaio-rpi](readmeres/sequent.jpg)](https://www.sequentmicrosystems.com/megaio.html)
+[![wdt-rpi](readmeres/sequent.jpg)](https://www.sequentmicrosystems.com)
 
 # wd-rpi
 Raspberry pi libraries and command line interface for control Watchdog for Raspberry Pi board
