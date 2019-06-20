@@ -8,7 +8,7 @@ This is the python library to control [Watchdog for Raspberry Board](https://www
 ~$ sudo apt-get update
 ~$ sudo apt-get install build-essential python-pip python-dev python-smbus git
 ~$ git clone https://github.com/SequentMicrosystems/wdt-rpi.git
-~$ cd wdt-rpi/python/megaio/
+~$ cd wdt-rpi/python/wdt/
 ~/wdt-rpi/python/wdt$ sudo python setup.py install
 ```
 ## Update
@@ -16,7 +16,7 @@ This is the python library to control [Watchdog for Raspberry Board](https://www
 ```bash
 ~$ cd wdt-rpi/
 ~/wdt-rpi$ git pull
-~$ cd wdt-rpi/python/megaio/
+~$ cd wdt-rpi/python/wdt/
 ~/wdt-rpi/python/wdt$ sudo python setup.py install
 ```
 
@@ -36,4 +36,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 Prototypes for all functions can be found in README.md file locate under wdt-rpi/python/wdt/ directory. 
 
-This library works with both Python2.x and Python3
+This library works with both Python2 and Python3
