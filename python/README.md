@@ -31,7 +31,7 @@ Python 2.7.9 (default, Sep 17 2016, 20:26:04)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import wdt
 >>> wdt.getDefaultPeriod()
-270000
+270
 >>>
 ```
 Prototypes for all functions can be found in README.md file locate under wdt-rpi/python/wdt/ directory. 
