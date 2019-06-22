@@ -44,10 +44,13 @@ def reload():
   
 def  setDefaultPeriod(val):
   ret = 1
-  try:
-    bus.write_word_data(HW_ADD, WRITE_INITIAL_INTERVAL_ADD, val)
-  except:
-    ret = -1
+  if val > 10 and val < 65000:
+    try:
+      bus.write_word_data(HW_ADD, WRITE_INITIAL_INTERVAL_ADD, val)
+    except:
+      ret = -1
+  else:
+    ret = -1    
   return ret 
   
 def getDefaultPeriod():
