@@ -9,6 +9,7 @@
 
 #define WDT_HW_ADD 0x30
 #define WDT_RELOAD_KEY  0xCA
+#define WDT_RESET_COUNT_KEY	0xBE
 
 #define WDT_DEFAULT_PERIOD_MIN  11
 #define WDT_DEFAULT_PERIOD_MAX  64999
@@ -20,6 +21,7 @@ char *usage = "Usage:	wdt -h/-help <command>\n"
 		"         wdt -d/-default <value>\n"
 		"         wdt -p/-period <value>\n"
     "         wdt -g/-get <option>\n"
+    "         wdt -c/-clear\n"
     "         wdt -v/-version\n"
 		"Type wdt -h <command> for more help";// No trailing newline needed here.
     
@@ -67,12 +69,18 @@ void doHelp(int argc, char *argv[])
 			printf("\tUsage:       wdt -p <value>\n");
 			printf("\tExample:     wdt -p 20 Set the wdt period to 20 sec and reload the timer\n"); 
 		}
+    else if (strcasecmp (argv [2], "-c") == 0 || strcasecmp (argv [2], "-clear") == 0)	
+		{ 
+			printf("\t-c/-clear:   Clear the reset counter  \n");
+			printf("\tUsage:       wdt -c\n");
+			printf("\tExample:     wdt -c\n"); 
+		}
     else if (strcasecmp (argv [2], "-g") == 0 || strcasecmp (argv [2], "-get") == 0)	
 		{ 
-			printf("\t-g/-get:     Get various parameters\n");
-			printf("\tUsage:       wdt -g <option>\n");
-      printf("\t<option>:    d/default = default period\n\t\t\t p/period = period\n\t\t\t r/resets = total number of resets performed by the board\n");
-			printf("\tExample:     wdt -g d get the wdt default period \n");
+			printf("\t-g/-get:      \tGet various parameters\n");
+			printf("\tUsage:        \twdt -g <option>\n");
+      printf("\t<option>:     \td/default = default period\n\t\t\tp/period = period\n\t\t\tr/resets = total number of resets performed by the board\n");
+			printf("\tExample:      \twdt -g d get the wdt default period \n");
 		}
 		else
 		{
@@ -153,6 +161,28 @@ static int doPeriod(int argc, char* argv[])
   }
   return FAIL;
 }
+
+static int doClear(int argc, char* argv[])
+{
+  int dev = 0;
+  
+  UNUSED(argv);
+  
+  if(argc != 2)
+  {
+    printf("Invalid number of arguments\n");
+    return FAIL;
+  }
+  
+  dev = doBoardInit(WDT_HW_ADD);
+  if(dev <= 0)
+  {
+    return FAIL;
+  }
+ 
+  return writeReg16(dev, I2C_WDT_CLEAR_RESET_COUNT_ADD, WDT_RESET_COUNT_KEY);
+}
+
 
 static int doGet(int argc, char* argv[])
 {
@@ -235,6 +265,11 @@ int main(int argc, char *argv [])
   if(0 == strcasecmp(argv[1], "-p") || 0 == strcasecmp(argv[1], "-period"))
   {
     return doPeriod(argc, argv);
+  }
+  
+  if(0 == strcasecmp(argv[1], "-c") || 0 == strcasecmp(argv[1], "-clear"))
+  {
+    return doClear(argc, argv);
   }
   
   if(0 == strcasecmp(argv[1], "-g") || 0 == strcasecmp(argv[1], "-get"))
