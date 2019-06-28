@@ -13,17 +13,18 @@
 
 #define WDT_DEFAULT_PERIOD_MIN  11
 #define WDT_DEFAULT_PERIOD_MAX  64999
+#define WDT_DISABLE_PERIOD      65001
 #define WDT_PERIOD_MAX  0xffff
 
-char *usage = "Usage:	wdt -h/-help <command>\n"
+char *usage = "Usage:   wdt -h/-help <command>\n"
     "         wdt -warranty\n"
-		"         wdt -r/-reload\n"
-		"         wdt -d/-default <value>\n"
-		"         wdt -p/-period <value>\n"
+    "         wdt -r/-reload\n"
+    "         wdt -d/-default <value>\n"
+    "         wdt -p/-period <value>\n"
     "         wdt -g/-get <option>\n"
     "         wdt -c/-clear\n"
     "         wdt -v/-version\n"
-		"Type wdt -h <command> for more help";// No trailing newline needed here.
+    "Type wdt -h <command> for more help";// No trailing newline needed here.
     
 char *warranty ="	       Copyright (c) 2016-2019 Sequent Microsystems\n"
 				"                                                             \n"
@@ -46,28 +47,32 @@ void doHelp(int argc, char *argv[])
 	{
     if (strcasecmp (argv [2], "-warranty"    ) == 0)	
 		{ 
-			printf("\t-warranty:      Display the warranty\n");
+			printf("\t-warranty:   Display the warranty\n");
 			printf("\tUsage:       wdt -warranty\n");
 			printf("\tExample:     wdt -warranty\n"); 
 		}
 		else if (strcasecmp (argv [2], "-r") == 0 || strcasecmp (argv [2], "-reload") == 0)	
 		{ 
-			printf("\t-r/-reload:       Reload the timer, prevent raspberry to be repowered\n");
+			printf("\t-r/-reload:  Reload the timer, prevent Raspberry Pi to be repowered\n");
 			printf("\tUsage:       wdt -r\n");
 			printf("\tExample:     wdt -r\n"); 
 		}
 		else if (strcasecmp (argv [2], "-d") == 0 || strcasecmp (argv [2], "-default") == 0)	
 		{ 
-			printf("\t-d/-default:       Set the default period (sec), the wdt board automaticaly reload this period after reset\n");
+			printf("\t-d/-default: Set the default period (sec); The watchdog will reload this period after reset\n");
 			printf("\tUsage:       wdt -d <value>\n");
 			printf("\tUsage:       wdt -default <value>\n");
-			printf("\tExample:     wdt -d 270 Set the default period to 270 seconds \n"); 
+			printf("\tExample:     Set the default period to 270 seconds:\n"); 
+			printf("\t             wdt -d 270\n"); 
 		}
 		else if (strcasecmp (argv [2], "-p") == 0 || strcasecmp (argv [2], "-period") == 0)	
 		{ 
 			printf("\t-p/-period:  Set the current period and reload the timer\n");
 			printf("\tUsage:       wdt -p <value>\n");
-			printf("\tExample:     wdt -p 20 Set the wdt period to 20 sec and reload the timer\n"); 
+			printf("\tExample:     Set the wdt period to 20 sec and reload the timer:\n"); 
+			printf("\t             wdt -p 20\n"); 
+      printf("\tExample:     Disable the watchdog:\n"); 
+			printf("\t             wdt -p 0\n"); 
 		}
     else if (strcasecmp (argv [2], "-c") == 0 || strcasecmp (argv [2], "-clear") == 0)	
 		{ 
@@ -77,10 +82,12 @@ void doHelp(int argc, char *argv[])
 		}
     else if (strcasecmp (argv [2], "-g") == 0 || strcasecmp (argv [2], "-get") == 0)	
 		{ 
-			printf("\t-g/-get:      \tGet various parameters\n");
-			printf("\tUsage:        \twdt -g <option>\n");
-      printf("\t<option>:     \td/default = default period\n\t\t\tp/period = period\n\t\t\tr/resets = total number of resets performed by the board\n");
-			printf("\tExample:      \twdt -g d get the wdt default period \n");
+			printf("\t-g/-get:     Get watchdog parameters\n");
+			printf("\tUsage:       wdt -g <option>\n");
+      printf("\t<option>:    d/default = default period\n");
+      printf("\t             p/period = period\n");
+      printf("\t             r/resets = total number of resets performed by the watchdog\n");
+			printf("\tExample:     wdt -g d get the wdt default period \n");
 		}
 		else
 		{
@@ -158,6 +165,10 @@ static int doPeriod(int argc, char* argv[])
   if((0 < val) && (val <= WDT_PERIOD_MAX))
   {
     return writeReg16(dev, I2C_WDT_INTERVAL_SET_ADD, val);
+  }
+  else if(val == 0)
+  {
+    return writeReg16(dev, I2C_WDT_INTERVAL_SET_ADD, WDT_DISABLE_PERIOD);
   }
   return FAIL;
 }
