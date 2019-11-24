@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="wdt",
-    version="1.0.0",
+    version="2.0.0",
     author="Alexandru Burcea",
     author_email="olcit@gmail.com",
     description="A set of functions to control Sequent Microsystems Watchdog for Raspberry board",
