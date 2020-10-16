@@ -11,6 +11,12 @@ This is the python library to control [Watchdog for Raspberry Board](https://www
 ~$ cd wdt-rpi/python/wdt/
 ~/wdt-rpi/python/wdt$ sudo python setup.py install
 ```
+
+for Python 3.x usge replace last line with:
+```bash
+~/wdt-rpi/python/wdt$ sudo python3 setup.py install
+```
+
 ## Update
 
 ```bash
@@ -34,6 +40,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 270
 >>>
 ```
-Prototypes for all functions can be found in README.md file locate under wdt-rpi/python/wdt/ directory. 
+Prototypes for all functions can be found [here](https://github.com/SequentMicrosystems/wdt-rpi/blob/master/python/wdt/README.md). 
 
 This library works with both Python2 and Python3
