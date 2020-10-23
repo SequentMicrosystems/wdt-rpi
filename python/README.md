@@ -40,6 +40,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 270
 >>>
 ```
-Prototypes for all functions can be found [here](https://github.com/SequentMicrosystems/wdt-rpi/blob/master/python/wdt/README.md). 
+## [Documentation](https://github.com/SequentMicrosystems/wdt-rpi/blob/master/python/wdt/README.md). 
 
 This library works with both Python2 and Python3
