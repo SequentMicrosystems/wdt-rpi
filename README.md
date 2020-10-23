@@ -20,3 +20,5 @@ If you clone the repository, any update can be made with the following commands:
 ~/wdt-rpi$ git pull
 ~/wdt-rpi$ sudo make install
 ```  
+
+## Python [library](https://github.com/SequentMicrosystems/wdt-rpi/tree/master/python)
