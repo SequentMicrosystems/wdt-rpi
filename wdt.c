@@ -17,31 +17,32 @@
 #define WDT_OFF_INTERVAL_MAX	0x7fffffff
 
 char *usage = "Usage:   wdt -h/-help <command>\n"
-		"         wdt -warranty\n"
-		"         wdt -r/-reload\n"
-		"         wdt -d/-default <value>\n"
-		"         wdt -p/-period <value>\n"
-		"         wdt -off/-offinterval <value>\n"
-		"         wdt -g/-get <option>\n"
-		"         wdt -c/-clear\n"
-		"         wdt -v/-version\n"
-		"Type wdt -h <command> for more help"; // No trailing newline needed here.
+	"         wdt -warranty\n"
+	"         wdt -r/-reload\n"
+	"         wdt -d/-default <value>\n"
+	"         wdt -p/-period <value>\n"
+	"         wdt -off/-offinterval <value>\n"
+	"         wdt -g/-get <option>\n"
+	"         wdt -c/-clear\n"
+	"         wdt -v/-version\n"
+	"         wdt -rob/-repoweronbattery\n"
+	"Type wdt -h <command> for more help"; // No trailing newline needed here.
 
 char *warranty =
-		"	       Copyright (c) 2016-2019 Sequent Microsystems\n"
-				"                                                             \n"
-				"		This program is free software; you can redistribute it and/or modify\n"
-				"		it under the terms of the GNU Leser General Public License as published\n"
-				"		by the Free Software Foundation, either version 3 of the License, or\n"
-				"		(at your option) any later version.\n"
-				"                                    \n"
-				"		This program is distributed in the hope that it will be useful,\n"
-				"		but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-				"		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-				"		GNU Lesser General Public License for more details.\n"
-				"			\n"
-				"		You should have received a copy of the GNU Lesser General Public License\n"
-				"		along with this program. If not, see <http://www.gnu.org/licenses/>.";
+	"	       Copyright (c) 2016-2019 Sequent Microsystems\n"
+		"                                                             \n"
+		"		This program is free software; you can redistribute it and/or modify\n"
+		"		it under the terms of the GNU Leser General Public License as published\n"
+		"		by the Free Software Foundation, either version 3 of the License, or\n"
+		"		(at your option) any later version.\n"
+		"                                    \n"
+		"		This program is distributed in the hope that it will be useful,\n"
+		"		but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+		"		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+		"		GNU Lesser General Public License for more details.\n"
+		"			\n"
+		"		You should have received a copy of the GNU Lesser General Public License\n"
+		"		along with this program. If not, see <http://www.gnu.org/licenses/>.";
 
 void doHelp(int argc, char *argv[])
 {
@@ -54,62 +55,79 @@ void doHelp(int argc, char *argv[])
 			printf("\tExample:     wdt -warranty\n");
 		}
 		else if (strcasecmp(argv[2], "-r") == 0
-				|| strcasecmp(argv[2], "-reload") == 0)
+			|| strcasecmp(argv[2], "-reload") == 0)
 		{
-			printf("\t-r/-reload:  Reload the timer, prevent Raspberry Pi to be repowered\n");
+			printf(
+				"\t-r/-reload:  Reload the timer, prevent Raspberry Pi to be repowered\n");
 			printf("\tUsage:       wdt -r\n");
 			printf("\tExample:     wdt -r\n");
 		}
 		else if (strcasecmp(argv[2], "-d") == 0
-				|| strcasecmp(argv[2], "-default") == 0)
+			|| strcasecmp(argv[2], "-default") == 0)
 		{
-			printf("\t-d/-default: Set the default period (sec); The watchdog will reload this period after reset\n");
+			printf(
+				"\t-d/-default: Set the default period (sec); The watchdog will reload this period after reset\n");
 			printf("\tUsage:       wdt -d <value>\n");
 			printf("\tUsage:       wdt -default <value>\n");
 			printf("\tExample:     Set the default period to 270 seconds:\n");
 			printf("\t             wdt -d 270\n");
 		}
 		else if (strcasecmp(argv[2], "-p") == 0
-				|| strcasecmp(argv[2], "-period") == 0)
+			|| strcasecmp(argv[2], "-period") == 0)
 		{
-			printf(
-					"\t-p/-period:  Set the current period and reload the timer\n");
+			printf("\t-p/-period:  Set the current period and reload the timer\n");
 			printf("\tUsage:       wdt -p <value>\n");
 			printf(
-					"\tExample:     Set the wdt period to 20 sec and reload the timer:\n");
+				"\tExample:     Set the wdt period to 20 sec and reload the timer:\n");
 			printf("\t             wdt -p 20\n");
 			printf("\tExample:     Disable the watchdog:\n");
 			printf("\t             wdt -p 0\n");
 		}
 		else if (strcasecmp(argv[2], "-c") == 0
-				|| strcasecmp(argv[2], "-clear") == 0)
+			|| strcasecmp(argv[2], "-clear") == 0)
 		{
 			printf("\t-c/-clear:   Clear the reset counter  \n");
 			printf("\tUsage:       wdt -c\n");
 			printf("\tExample:     wdt -c\n");
 		}
 		else if (strcasecmp(argv[2], "-off") == 0
-				|| strcasecmp(argv[2], "-offinterval") == 0)
+			|| strcasecmp(argv[2], "-offinterval") == 0)
 		{
-			printf("\t-off/-offinterval:   Set the off interval (seconds), The Raspberry will keept off this amount of time when the repower operation is performed\n");
+			printf(
+				"\t-off/-offinterval:   Set the off interval (seconds), The Raspberry will keept off this amount of time when the repower operation is performed\n");
 			printf("\tUsage:       wdt -off <value>\n");
 			printf("\tExample:     Set the wdt off period to 1 hour:\n");
 			printf("\t             wdt -off 3600\n");
 		}
 		else if (strcasecmp(argv[2], "-g") == 0
-				|| strcasecmp(argv[2], "-get") == 0)
+			|| strcasecmp(argv[2], "-get") == 0)
 		{
 			printf("\t-g/-get:     Get watchdog parameters\n");
 			printf("\tUsage:       wdt -g <option>\n");
 			printf("\t<option>:    d/default = default period(sec)\n");
 			printf("\t             p/period = period(sec)\n");
-			printf("\t             r/resets = total number of resets performed \n");
+			printf(
+				"\t             r/resets = total number of resets performed \n");
 			printf("\t             v/vin = input voltage(mV)\n");
-			printf("\t             off/offinterval = how mutch wdt keep raspberry powered off (sec) \n");
+			printf(
+				"\t             off/offinterval = how mutch wdt keep raspberry powered off (sec) \n");
 			printf("\t             vr/vrasp = Raspberry voltage(mV)\n");
 			printf("\t             vb/vbat = Battery voltage(mV)\n");
-			printf("\t             c/charge = charge status (0 - off, 1 - charge complete, 2 - charging, 3 - fault)\n");
+			printf(
+				"\t             c/charge = charge status (0 - off, 1 - charge complete, 2 - charging, 3 - fault)\n");
+			printf(
+				"\t             rob/repoweronbattery = if the watchdog power off the Raspberry, will repower on battery only if this is 1");
 			printf("\tExample:     wdt -g d get the wdt default period \n");
+		}
+		else if (strcasecmp(argv[2], "-rob") == 0
+			|| strcasecmp(argv[2], "-repoweronbattery") == 0)
+		{
+			printf(
+				"\t-rob/-repoweronbattery:   Set the \"repower on battery\" flag, 1-power back on Raspberry if the main power i missing, 0 - wait for main power \n");
+			printf("\tUsage:       wdt -rob <value>\n");
+			printf(
+				"\tExample:     Do not power back on Raspberry if on battery\n");
+			printf("\t             wdt -rob 0\n");
 		}
 		else
 		{
@@ -161,7 +179,7 @@ static int doDefault(int argc, char* argv[])
 		return FAIL;
 	}
 	val = atoi(argv[2]);
-	if ((WDT_DEFAULT_PERIOD_MIN <= val) && (val <= WDT_DEFAULT_PERIOD_MAX))
+	if ( (WDT_DEFAULT_PERIOD_MIN <= val) && (val <= WDT_DEFAULT_PERIOD_MAX))
 	{
 		return writeReg16(dev, I2C_WDT_INIT_INTERVAL_SET_ADD, val);
 	}
@@ -186,7 +204,7 @@ static int doPeriod(int argc, char* argv[])
 		return FAIL;
 	}
 	val = atoi(argv[2]);
-	if ((0 < val) && (val <= WDT_PERIOD_MAX))
+	if ( (0 < val) && (val <= WDT_PERIOD_MAX))
 	{
 		return writeReg16(dev, I2C_WDT_INTERVAL_SET_ADD, val);
 	}
@@ -237,8 +255,8 @@ static int doSetOffTime(int argc, char* argv[])
 		return FAIL;
 	}
 	val = atoi(argv[2]);
-	if ((WDT_MIN_POWER_OFF_INTERVAL < val)
-			&& (val < WDT_MAX_POWER_OFF_INTERVAL))
+	if ( (WDT_MIN_POWER_OFF_INTERVAL < val)
+		&& (val < WDT_MAX_POWER_OFF_INTERVAL))
 	{
 		return writeReg32(dev, I2C_POWER_OFF_INTERVAL_SET_ADD, val);
 	}
@@ -267,13 +285,11 @@ static int doGet(int argc, char* argv[])
 	{
 		val = readReg16(dev, I2C_WDT_INIT_INTERVAL_GET_ADD);
 	}
-	else if (strcasecmp(argv[2], "p") == 0
-			|| strcasecmp(argv[2], "period") == 0)
+	else if (strcasecmp(argv[2], "p") == 0 || strcasecmp(argv[2], "period") == 0)
 	{
 		val = readReg16(dev, I2C_WDT_INTERVAL_GET_ADD);
 	}
-	else if (strcasecmp(argv[2], "r") == 0
-			|| strcasecmp(argv[2], "resets") == 0)
+	else if (strcasecmp(argv[2], "r") == 0 || strcasecmp(argv[2], "resets") == 0)
 	{
 		val = readReg16(dev, I2C_WDT_RESET_COUNT_ADD);
 	}
@@ -282,14 +298,13 @@ static int doGet(int argc, char* argv[])
 		val = readReg16(dev, I2C_5V_IN_ADD);
 	}
 	else if (strcasecmp(argv[2], "off") == 0
-			|| strcasecmp(argv[2], "offinterval") == 0)
+		|| strcasecmp(argv[2], "offinterval") == 0)
 	{
 		val = readReg32(dev, I2C_POWER_OFF_INTERVAL_GET_ADD);
 	}
-	else if (strcasecmp(argv[2], "vr") == 0
-			|| strcasecmp(argv[2], "vrasp") == 0)
+	else if (strcasecmp(argv[2], "vr") == 0 || strcasecmp(argv[2], "vrasp") == 0)
 	{
-		if(BOARD_TYPE_WDT == bType)
+		if (BOARD_TYPE_WDT == bType)
 		{
 			printf("Available for super-watchdog only!\n");
 			return FAIL;
@@ -297,9 +312,9 @@ static int doGet(int argc, char* argv[])
 		val = readReg16(dev, I2C_5V_OUT_ADD);
 	}
 	else if (strcasecmp(argv[2], "vb") == 0
-			|| strcasecmp(argv[2], "vbattery") == 0)
+		|| strcasecmp(argv[2], "vbattery") == 0)
 	{
-		if(BOARD_TYPE_WDT == bType)
+		if (BOARD_TYPE_WDT == bType)
 		{
 			printf("Available for super-watchdog only!\n");
 			return FAIL;
@@ -308,7 +323,7 @@ static int doGet(int argc, char* argv[])
 	}
 	else if (strcasecmp(argv[2], "t") == 0 || strcasecmp(argv[2], "temp") == 0)
 	{
-		if(BOARD_TYPE_WDT == bType)
+		if (BOARD_TYPE_WDT == bType)
 		{
 			printf("Available for super-watchdog only!\n");
 			return FAIL;
@@ -317,12 +332,29 @@ static int doGet(int argc, char* argv[])
 	}
 	else if (strcasecmp(argv[2], "c") == 0 || strcasecmp(argv[2], "charge") == 0)
 	{
-		if(BOARD_TYPE_WDT == bType)
+		if (BOARD_TYPE_WDT == bType)
+		{
+			printf("Available for super-watchdog only!\n");
+			return FAIL;
+		}
+		val = 0x0f & readReg8(dev, I2C_CHARGE_STAT_ADD);
+	}
+	else if (strcasecmp(argv[2], "rob") == 0
+		|| strcasecmp(argv[2], "repoweronbattery") == 0)
+	{
+		if (BOARD_TYPE_WDT == bType)
 		{
 			printf("Available for super-watchdog only!\n");
 			return FAIL;
 		}
 		val = readReg8(dev, I2C_CHARGE_STAT_ADD);
+		if ( (val & 0xf0) == 0)
+		{
+			printf("Not available on this firmware version!\n");
+			return FAIL;
+		}
+		val = 0x01 & (~readReg8(dev, I2C_POWER_OFF_ON_BATTERY_ADD));
+		return val;
 	}
 	else
 	{
@@ -330,6 +362,40 @@ static int doGet(int argc, char* argv[])
 		return FAIL;
 	}
 	return val;
+}
+
+static int doSetRepowerOnBattery(int argc, char *argv[])
+{
+	int dev = 0;
+	int val = 0;
+	u8 bType = 0;
+	u8 out = 0;
+
+	if (argc != 3)
+	{
+		printf("Invalid number of arguments\n");
+		return FAIL;
+	}
+
+	dev = doBoardInit(WDT_HW_ADD, &bType);
+	if (dev <= 0)
+	{
+		return FAIL;
+	}
+	val = readReg8(dev, I2C_CHARGE_STAT_ADD);
+	if ( (val & 0xf0) == 0)
+	{
+		printf("Not available on this firmware version!\n");
+		return FAIL;
+	}
+	val = atoi(argv[2]);
+
+	if (val == 0)
+	{
+		out = 1;
+	}
+
+	return writeReg8(dev, I2C_POWER_OFF_ON_BATTERY_ADD, out);
 }
 
 int main(int argc, char *argv[])
@@ -378,7 +444,7 @@ int main(int argc, char *argv[])
 	}
 
 	if (0 == strcasecmp(argv[1], "-off")
-			|| 0 == strcasecmp(argv[1], "-offinterval"))
+		|| 0 == strcasecmp(argv[1], "-offinterval"))
 	{
 		return doSetOffTime(argc, argv);
 	}
@@ -397,6 +463,11 @@ int main(int argc, char *argv[])
 		}
 		printf("%d\n", i);
 		return OK;
+	}
+	if (strcasecmp(argv[1], "-rob") == 0
+		|| strcasecmp(argv[1], "-repoweronbattery") == 0)
+	{
+		return doSetRepowerOnBattery(argc, argv);
 	}
 	printf("Invalid argument(s)!\n");
 	printf("%s\n", usage);
