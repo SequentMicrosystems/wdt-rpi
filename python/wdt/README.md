@@ -52,3 +52,13 @@ Return the board temperature deg C or -1 in cas of error.
 
 ### getChargeStat()
 Return the battery charge status (0 - off, 1 - charge complete, 2 - charging, 3 - fault) or -1 in cas of error.
+
+### getRepowerOnBattery()
+Return the "Repower On Battery" settings: 
+ - 0 - if a repower event occur and the main power (external 5V) is not present it will power off entyre watchdog (Wachdog and Raspbery will start only if main power is restored) 
+ - 1 - the Watchdog will restore Raspberry at repower event even the main power source is not present.
+ 
+ ### setRepowerOnBattery(val)
+ Setter for "Repower On Battery" settings, posible values:
+  - 0 - if a repower event occur and the main power (external 5V) is not present it will power off entyre watchdog (Wachdog and Raspbery will start only if main power is restored) 
+ - 1 - the Watchdog will restore Raspberry at repower event even the main power source is not present.
