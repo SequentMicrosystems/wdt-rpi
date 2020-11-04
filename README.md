@@ -2,7 +2,9 @@
 [![wdt-rpi](reameres/sequent.jpg)](https://www.sequentmicrosystems.com)
 
 # wdt-rpi
-Raspberry pi libraries and command line interface for controlling the Watchdog for Raspberry Pi board
+[![wdt-rpi](reameres/WDT.jpg)](https://www.sequentmicrosystems.com)
+
+Raspberry pi libraries and command line interface for controlling the [Super-Watchdog with Battery Backup for Raspberry Pi](https://sequentmicrosystems.com/product/super-watchdog-for-raspberry-pi/)
 
 ## Usage
 
