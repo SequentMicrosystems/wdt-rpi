@@ -62,3 +62,19 @@ Return the "Repower On Battery" settings:
  Setter for "Repower On Battery" settings, posible values:
   - 0 - if a repower event occur and the main power (external 5V) is not present it will power off entyre watchdog (Wachdog and Raspbery will start only if main power is restored) 
  - 1 - the Watchdog will restore Raspberry at repower event even the main power source is not present.
+
+### getPowerButtonEnable()
+Getter for the power button usage.
+returns  - 1 if the int signal Raspberry pi 40 pin connector pin #23 is used as a power button. - 0 if the pin is used to reload the watchdog counter
+
+### setPowerButtonEnable(val)
+Setter for power button usage.
+If val = 0, disable power button functionality else enable it
+The value is written in flash so is persistent.
+
+### getPowerButtonPush()
+Getter for power button push status.
+Return 1 if the button has been pushed at least once in the current power cycle and 0 else.
+The status of the button is cleared when the Raspberry power is restored.
+When this status is 1 and Raspberry power is down (watchdog timer expired) remain down until you push the button again. In this way, the power off button can be implemented.
+If the user do not wish this feature can disable it (setPowerButtonEnable(0)).
