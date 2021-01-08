@@ -11,7 +11,7 @@ CFLAGS	= $(DEBUG) -Wall -Wextra $(INCLUDE) -Winline -pipe
 LDFLAGS	= -L$(DESTDIR)$(PREFIX)/lib
 LIBS    = -lrt -lm -lcrypt
 
-SRC	=	wdt.c comm.c
+SRC	=	src/wdt.c src/comm.c
 
 OBJ	=	$(SRC:.c=.o)
 
