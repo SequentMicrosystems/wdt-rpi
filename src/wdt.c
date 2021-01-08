@@ -26,6 +26,7 @@ char *usage = "Usage:   wdt -h/-help <command>\n"
 	"         wdt -c/-clear\n"
 	"         wdt -v/-version\n"
 	"         wdt -rob/-repoweronbattery\n"
+   "         wdt -pbe/-powerbuttonenable\n"
 	"Type wdt -h <command> for more help"; // No trailing newline needed here.
 
 char *warranty =
@@ -116,7 +117,11 @@ void doHelp(int argc, char *argv[])
 			printf(
 				"\t             c/charge = charge status (0 - off, 1 - charge complete, 2 - charging, 3 - fault)\n");
 			printf(
-				"\t             rob/repoweronbattery = if the watchdog power off the Raspberry, will repower on battery only if this is 1");
+				"\t             rob/repoweronbattery = if the watchdog power off the Raspberry, will repower on battery only if this is 1\n");
+			printf(
+				"\t             pbe/powerbuttonenable = power button enabled/disabled (1/0)\n");
+			printf(
+				"\t             pbs/powerbuttonstatus = 1 - power button has been pushed; 0 - not  \n");
 			printf("\tExample:     wdt -g d get the wdt default period \n");
 		}
 		else if (strcasecmp(argv[2], "-rob") == 0
@@ -128,6 +133,15 @@ void doHelp(int argc, char *argv[])
 			printf(
 				"\tExample:     Do not power back on Raspberry if on battery\n");
 			printf("\t             wdt -rob 0\n");
+		}
+		else if (strcasecmp(argv[2], "-pbe") == 0
+			|| strcasecmp(argv[2], "-powerbuttonenable") == 0)
+		{
+			printf(
+				"\t-pbe/-powerbuttonenable:   Enable / disable the power button, you can read his status and it can power back on raspberry if is pushed \n");
+			printf("\tUsage:       wdt -pbe <value>\n");
+			printf("\tExample:     Enable power button\n");
+			printf("\t             wdt -pbe 1\n");
 		}
 		else
 		{
@@ -356,6 +370,40 @@ static int doGet(int argc, char* argv[])
 		val = 0x01 & (~readReg8(dev, I2C_POWER_OFF_ON_BATTERY_ADD));
 		return val;
 	}
+	else if (strcasecmp(argv[2], "pbe") == 0
+		|| strcasecmp(argv[2], "powerbuttonenable") == 0)
+	{
+		if (BOARD_TYPE_WDT == bType)
+		{
+			printf("Available for super-watchdog only!\n");
+			return FAIL;
+		}
+		val = readReg8(dev, I2C_CHARGE_STAT_ADD);
+		if ( (val & 0xf0) <= 0x10)
+		{
+			printf("Not available on this firmware version!\n");
+			return FAIL;
+		}
+		val = 0x01 & (readReg8(dev, I2C_POWER_SW_USAGE_ADD));
+		return val;
+	}
+	else if (strcasecmp(argv[2], "pbs") == 0
+		|| strcasecmp(argv[2], "powerbuttonstatus") == 0)
+	{
+		if (BOARD_TYPE_WDT == bType)
+		{
+			printf("Available for super-watchdog only!\n");
+			return FAIL;
+		}
+		val = readReg8(dev, I2C_CHARGE_STAT_ADD);
+		if ( (val & 0xf0) <= 0x10)
+		{
+			printf("Not available on this firmware version!\n");
+			return FAIL;
+		}
+		val = 0x01 & (readReg8(dev, I2C_POWER_SW_STATUS_ADD));
+		return val;
+	}
 	else
 	{
 		printf("Invalid  option for -get command\n");
@@ -396,6 +444,40 @@ static int doSetRepowerOnBattery(int argc, char *argv[])
 	}
 
 	return writeReg8(dev, I2C_POWER_OFF_ON_BATTERY_ADD, out);
+}
+
+static int doSetPowerButtonEnable(int argc, char *argv[])
+{
+	int dev = 0;
+	int val = 0;
+	u8 bType = 0;
+	u8 out = 0;
+
+	if (argc != 3)
+	{
+		printf("Invalid number of arguments\n");
+		return FAIL;
+	}
+
+	dev = doBoardInit(WDT_HW_ADD, &bType);
+	if (dev <= 0)
+	{
+		return FAIL;
+	}
+	val = readReg8(dev, I2C_CHARGE_STAT_ADD);
+	if ( (val & 0xf0) <= 0x10)
+	{
+		printf("Not available on this firmware version!\n");
+		return FAIL;
+	}
+	val = atoi(argv[2]);
+
+	if (val > 0)
+	{
+		out = 1;
+	}
+
+	return writeReg8(dev, I2C_POWER_SW_USAGE_ADD, out);
 }
 
 int main(int argc, char *argv[])
@@ -468,6 +550,11 @@ int main(int argc, char *argv[])
 		|| strcasecmp(argv[1], "-repoweronbattery") == 0)
 	{
 		return doSetRepowerOnBattery(argc, argv);
+	}
+	if (strcasecmp(argv[1], "-pbe") == 0
+		|| strcasecmp(argv[1], "-powerbuttonenable") == 0)
+	{
+		return doSetPowerButtonEnable(argc, argv);
 	}
 	printf("Invalid argument(s)!\n");
 	printf("%s\n", usage);
