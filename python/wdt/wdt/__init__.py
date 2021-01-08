@@ -24,6 +24,8 @@ V_OUT_ADD = 24
 TEMP_ADD = 26
 CHARGE_STAT_ADD = 27
 POWER_OFF_ON_BATTERY_ADD = 28
+POWER_SW_USAGE_ADD = 29
+POWER_SW_STATUS_ADD = 30
 
 WDT_MAX_POWER_OFF_INTERVAL = 31 * 24 * 3600
 
@@ -40,7 +42,7 @@ def getPeriod():
 
 def setPeriod(val):
     ret = 1
-    if val < 1: #disable the watchdog
+    if val < 1:  # disable the watchdog
         val = 65001
     bus = smbus.SMBus(1)
     try:
@@ -232,3 +234,51 @@ def setRepowerOnBattery(val):
         ret = -1
     bus.close()
     return ret
+
+
+def getPowerButtonEnable():
+    bus = smbus.SMBus(1)
+    val = 0
+    try:
+        id = bus.read_byte_data(HW_ADD, RELOAD_ADD)
+        if 1 == id:
+            id = 0xf0 & bus.read_byte_data(HW_ADD, CHARGE_STAT_ADD)
+            if id > 0x10:
+                val = bus.read_byte_data(HW_ADD, POWER_SW_USAGE_ADD)
+    except Exception as e:
+        val = -1
+    bus.close()
+    return val
+
+
+def setPowerButtonEnable(val):
+    ret = -1
+    bus = smbus.SMBus(1)
+    if val != 0:
+        val = 1
+    try:
+        id = bus.read_byte_data(HW_ADD, RELOAD_ADD)
+        if 1 == id:
+            id = 0xf0 & bus.read_byte_data(HW_ADD, CHARGE_STAT_ADD)
+            if id > 0x10:
+                bus.write_byte_data(HW_ADD, POWER_SW_USAGE_ADD, val)
+                ret = 1
+    except Exception as e:
+        ret = -1
+    bus.close()
+    return ret
+
+
+def getPowerButtonPush():
+    bus = smbus.SMBus(1)
+    val = 0
+    try:
+        id = bus.read_byte_data(HW_ADD, RELOAD_ADD)
+        if 1 == id:
+            id = 0xf0 & bus.read_byte_data(HW_ADD, CHARGE_STAT_ADD)
+            if id > 0x10:
+                val = bus.read_byte_data(HW_ADD, POWER_SW_STATUS_ADD)
+    except Exception as e:
+        val = -1
+    bus.close()
+    return val
