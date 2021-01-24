@@ -325,8 +325,7 @@ static int doGet(int argc, char* argv[])
 		}
 		val = readReg16(dev, I2C_5V_OUT_ADD);
 	}
-	else if (strcasecmp(argv[2], "vb") == 0
-		|| strcasecmp(argv[2], "vbattery") == 0)
+	else if (strcasecmp(argv[2], "vb") == 0 || strcasecmp(argv[2], "vbat") == 0)
 	{
 		if (BOARD_TYPE_WDT == bType)
 		{
