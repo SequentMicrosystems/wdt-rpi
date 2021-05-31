@@ -78,3 +78,8 @@ Return 1 if the button has been pushed at least once in the current power cycle 
 The status of the button is cleared when the Raspberry power is restored.
 When this status is 1 and Raspberry power is down (watchdog timer expired) remain down until you push the button again. In this way, the power off button can be implemented.
 If the user do not wish this feature can disable it (setPowerButtonEnable(0)).
+
+## clrPowerButton()
+Clear the power button status. 
+This function can be used for prevent false button trigger at Rapberry pi Start-up
+Return 1 if succeed, and -1 if fails.

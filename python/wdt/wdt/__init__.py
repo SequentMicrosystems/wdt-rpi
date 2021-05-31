@@ -282,3 +282,16 @@ def getPowerButtonPush():
         val = -1
     bus.close()
     return val
+
+
+def clrPowerButton():
+    ret = -1
+    val = 0
+    bus = smbus.SMBus(1)
+    try:
+        bus.write_byte_data(HW_ADD, POWER_SW_STATUS_ADD, val);
+        ret = 1
+    except Exception as e:
+        ret = -1
+    bus.close()
+    return ret
