@@ -1,6 +1,6 @@
 # wdt
 
-This is the python library to control [Super-Watchdog with Battery Backup for Raspberry Pi](https://sequentmicrosystems.com/collections/all-products/products/raspberry-pi-watchdog-battery-back).
+This is the python library to control [Super-Watchdog with Battery Backup for Raspberry Pi](https://sequentmicrosystems.com/collections/all-io-cards/products/raspberry-pi-battery-backup).
 
 ## Install
 
