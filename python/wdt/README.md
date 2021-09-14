@@ -83,3 +83,11 @@ If the user do not wish this feature can disable it (setPowerButtonEnable(0)).
 Clear the power button status. 
 This function can be used for prevent false button trigger at Rapberry pi Start-up
 Return 1 if succeed, and -1 if fails.
+
+### getPowerButton()
+The same as getPowerButtonPush().
+
+## setPowerButton(val)
+Set the power button push state so you can emulate the button in software or cleasr his status.
+ - val 0/1
+Return 1 if succeed, and -1 if fails.

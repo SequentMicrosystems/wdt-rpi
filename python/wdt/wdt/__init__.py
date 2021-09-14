@@ -289,7 +289,38 @@ def clrPowerButton():
     val = 0
     bus = smbus.SMBus(1)
     try:
-        bus.write_byte_data(HW_ADD, POWER_SW_STATUS_ADD, val);
+        bus.write_byte_data(HW_ADD, POWER_SW_STATUS_ADD, val)
+        ret = 1
+    except Exception as e:
+        ret = -1
+    bus.close()
+    return ret
+
+
+def getPowerButton():
+    bus = smbus.SMBus(1)
+    val = 0
+    try:
+        id = bus.read_byte_data(HW_ADD, RELOAD_ADD)
+        if 1 == id:
+            id = 0xf0 & bus.read_byte_data(HW_ADD, CHARGE_STAT_ADD)
+            if id > 0x10:
+                val = bus.read_byte_data(HW_ADD, POWER_SW_STATUS_ADD)
+    except Exception as e:
+        val = -1
+    bus.close()
+    return val
+
+
+def setPowerButton(val):
+    ret = -1
+    if val < 0:
+        val = 0
+    if val > 1:
+        val = 1
+    bus = smbus.SMBus(1)
+    try:
+        bus.write_byte_data(HW_ADD, POWER_SW_STATUS_ADD, val)
         ret = 1
     except Exception as e:
         ret = -1
