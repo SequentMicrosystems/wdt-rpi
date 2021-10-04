@@ -29,7 +29,7 @@ For safety shutdown when the main power is off and the backup battery is dischar
 #Read the battery voltage
 var1=$(wdt -g vb)
 #Set the voltage threshold in millivolts
-var2=3200
+var2=3600
 date1=$(date -u)
 if [ $(($var1)) -lt $var2 ]; then
     #Make the wdt not power back on the RPI when on battery
