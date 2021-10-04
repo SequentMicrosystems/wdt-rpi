@@ -47,6 +47,26 @@ fi
 ```
 The script monitors your battery voltage and if is dropping below a certain threshold, will inform the watchdog to not repower until the main power source comes back and shut down the RPI. This script also reloads the watchdog counter and log the activity for future analisys.
 
+For actually use this you need to create a file let's say wdt.sh in /home/pi folder:
+```bash
+    nano /home/pi/wdt.sh
+```
+paste the code hit ^O for save and ^X for exit.
+
+Give the file execution rights:
+```bash
+    sudo chmod +x wdt.sh
+```
+Edit crontab:
+```bash
+    crontab -e
+```
+At the end of the file add the folowing line:
+```bash
+    * * * * * sudo /home/pi/wdt.sh
+```
+This will run the script every minute
+
 Please keep in mind that the battery voltage threshold must be chused taking into account:
 * Raspberry power consumption
 * Battery real capacity
