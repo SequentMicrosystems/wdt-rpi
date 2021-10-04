@@ -24,7 +24,7 @@ If you clone the repository, any update can be made with the following commands:
 ```  
 ### Usage Example
 
-For safety shutdown when the main power is off and the backup battery is discharging you can create a shell script like the following one and run with cron at fixed intervals, let's say 1 minute. 
+For safety shutdown when the main power is off and the backup battery is discharging you can create a shell script like the following one and run from cron at fixed intervals, let's say 1 minute. 
 ```bash
 #Read the battery voltage
 var1=$(wdt -g vb)
