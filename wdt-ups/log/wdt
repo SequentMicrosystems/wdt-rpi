@@ -1,3 +1,1365 @@
 Wed 27 Oct 2021 12:38:15 AM UTC : Battery 3612 mV
 Wed 27 Oct 2021 12:40:01 AM UTC : Shutdown
 Wed 27 Oct 2021 12:40:01 AM UTC : Battery mV
+Wed 27 Oct 2021 12:50:01 AM UTC : Shutdown
+Wed 27 Oct 2021 12:50:01 AM UTC : Battery mV
+Wed 27 Oct 2021 12:54:51 AM UTC : Battery 3603 mV
+Wed 27 Oct 2021 12:57:36 AM UTC : Battery 3605 mV
+Wed 27 Oct 2021 12:57:36 AM UTC : Shutdown (var1:  3605 /var2:  3400 ):
+Wed 27 Oct 2021 12:57:48 AM UTC : Battery 3606 mV
+Wed 27 Oct 2021 12:57:48 AM UTC : Shutdown (var1:  3606 /var2:  3400 ):
+Wed 27 Oct 2021 12:58:17 AM UTC : Battery (var1:  3603 /var2:  3400 ):
+Wed 27 Oct 2021 12:58:40 AM UTC : Battery (var1:  3605 /var2:  3400 ):
+Wed 27 Oct 2021 01:00:01 AM UTC : Shutdown (var1:  /var2:  3400 ):
+Wed 27 Oct 2021 01:00:01 AM UTC : Battery (var1:  /var2:  3400 ):
+Wed 27 Oct 2021 01:00:59 AM UTC : Battery (var1:  3600 /var2:  3400 ):
+Wed 27 Oct 2021 01:05:01 AM UTC : Battery (var1:  3606 /var2:  3400 ):
+Wed 27 Oct 2021 01:06:01 AM UTC : Battery (var1:  3606 /var2:  3400 ):
+Wed 27 Oct 2021 01:07:01 AM UTC : Battery (var1:  3605 /var2:  3400 ):
+Wed 27 Oct 2021 01:07:45 AM UTC : Battery (var1: 3608/var2: 3400):
+Wed 27 Oct 2021 01:08:01 AM UTC : Battery (var1: 3605/var2: 3400):
+Wed 27 Oct 2021 01:10:01 AM UTC : Battery (var1: 3606/var2: 3400):
+Wed 27 Oct 2021 01:15:01 AM UTC : Battery (var1: 3605/var2: 3400):
+Wed 27 Oct 2021 01:21:35 AM UTC : Shutdown (var1: 3185/var2: 3400):
+Wed 27 Oct 2021 01:21:35 AM UTC : Battery (var1: 3185/var2: 3400):
+Wed 27 Oct 2021 01:45:01 AM UTC : Shutdown (var1: 15/var2: 3400):
+Wed 27 Oct 2021 01:45:01 AM UTC : Battery (var1: 15/var2: 3400):
+Wed 27 Oct 2021 01:59:12 AM UTC : Shutdown (var1: 18/var2: 3400):
+Wed 27 Oct 2021 02:01:14 AM UTC : Shutdown (var1: 20/var2: 3400):
+Wed 27 Oct 2021 02:01:14 AM UTC : Battery (var1: 20/var2: 3400):
+Wed 27 Oct 2021 02:05:01 AM UTC : Shutdown (var1: 22/var2: 3400):
+Wed 27 Oct 2021 02:05:01 AM UTC : Battery (var1: 22/var2: 3400):
+Wed 27 Oct 2021 02:10:01 AM UTC : Shutdown (var1: 24/var2: 3400):
+Wed 27 Oct 2021 02:10:01 AM UTC : Battery (var1: 24/var2: 3400):
+Wed 27 Oct 2021 02:15:01 AM UTC : Shutdown (var1: 24/var2: 3400):
+Wed 27 Oct 2021 02:15:01 AM UTC : Battery (var1: 24/var2: 3400):
+Wed 27 Oct 2021 02:20:01 AM UTC : Battery (var1: 3658/var2: 3400):
+Wed 27 Oct 2021 02:26:17 AM UTC : Battery (var1: 3665/var2: 3400):
+Wed 27 Oct 2021 02:30:01 AM UTC : Battery (var1: 3666/var2: 3400):
+Wed 27 Oct 2021 02:36:23 AM UTC : Battery (var1: 3673/var2: 3400):
+Wed 27 Oct 2021 02:36:23 AM UTC : Battery (var1: 3673/var2: 3400):
+Wed 27 Oct 2021 02:40:01 AM UTC : Battery (var1: 3678/var2: 3400):
+Wed 27 Oct 2021 02:42:22 AM UTC : Battery (var1: 3684/var2: 3400):
+Wed 27 Oct 2021 02:43:05 AM UTC : Battery (var1: 3682/var2: 3400):
+Wed 27 Oct 2021 02:43:05 AM UTC : Charging State:  2
+Wed 27 Oct 2021 02:45:01 AM UTC : Battery (var1: 3685/var2: 3400):
+Wed 27 Oct 2021 02:45:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 02:47:25 AM UTC : Battery (var1: 3685/var2: 3400):
+Wed 27 Oct 2021 02:47:25 AM UTC : Charging State:  2
+Wed 27 Oct 2021 02:50:01 AM UTC : Battery (var1: 3690/var2: 3400):
+Wed 27 Oct 2021 02:50:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 02:55:59 AM UTC : Battery (var1: 3697/var2: 3400):
+Wed 27 Oct 2021 02:55:59 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:00:01 AM UTC : Battery (var1: 3702/var2: 3400):
+Wed 27 Oct 2021 03:00:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:05:53 AM UTC : Battery (var1: 3706/var2: 3400):
+Wed 27 Oct 2021 03:05:53 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:15:01 AM UTC : Battery (var1: 3718/var2: 3400):
+Wed 27 Oct 2021 03:15:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:19:01 AM UTC : Battery (var1: 3726/var2: 3400):
+Wed 27 Oct 2021 03:19:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:20:01 AM UTC : Battery (var1: 3726/var2: 3400):
+Wed 27 Oct 2021 03:20:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:21:01 AM UTC : Battery (var1: 3726/var2: 3400):
+Wed 27 Oct 2021 03:21:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:22:01 AM UTC : Battery (var1: 3728/var2: 3400):
+Wed 27 Oct 2021 03:22:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:23:01 AM UTC : Battery (var1: 3730/var2: 3400):
+Wed 27 Oct 2021 03:23:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:24:01 AM UTC : Battery (var1: 3732/var2: 3400):
+Wed 27 Oct 2021 03:24:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:33:31 AM UTC : Battery (var1: 3732/var2: 3400):
+Wed 27 Oct 2021 03:33:31 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:34:02 AM UTC : Battery (var1: 3737/var2: 3400):
+Wed 27 Oct 2021 03:34:02 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:35:01 AM UTC : Battery (var1: 3738/var2: 3400):
+Wed 27 Oct 2021 03:35:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:36:01 AM UTC : Battery (var1: 3740/var2: 3400):
+Wed 27 Oct 2021 03:36:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:37:01 AM UTC : Battery (var1: 3744/var2: 3400):
+Wed 27 Oct 2021 03:37:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:38:01 AM UTC : Battery (var1: 3745/var2: 3400):
+Wed 27 Oct 2021 03:38:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:39:01 AM UTC : Battery (var1: 3745/var2: 3400):
+Wed 27 Oct 2021 03:39:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:40:01 AM UTC : Battery (var1: 3747/var2: 3400):
+Wed 27 Oct 2021 03:40:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:41:01 AM UTC : Battery (var1: 3752/var2: 3400):
+Wed 27 Oct 2021 03:41:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:42:01 AM UTC : Battery (var1: 3754/var2: 3400):
+Wed 27 Oct 2021 03:42:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:43:01 AM UTC : Battery (var1: 3754/var2: 3400):
+Wed 27 Oct 2021 03:43:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:44:01 AM UTC : Battery (var1: 3759/var2: 3400):
+Wed 27 Oct 2021 03:44:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:45:01 AM UTC : Battery (var1: 3764/var2: 3400):
+Wed 27 Oct 2021 03:45:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:46:01 AM UTC : Battery (var1: 3766/var2: 3400):
+Wed 27 Oct 2021 03:46:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:47:01 AM UTC : Battery (var1: 3769/var2: 3400):
+Wed 27 Oct 2021 03:47:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:48:01 AM UTC : Battery (var1: 3774/var2: 3400):
+Wed 27 Oct 2021 03:48:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:49:01 AM UTC : Battery (var1: 3774/var2: 3400):
+Wed 27 Oct 2021 03:49:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:50:01 AM UTC : Battery (var1: 3776/var2: 3400):
+Wed 27 Oct 2021 03:50:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:51:01 AM UTC : Battery (var1: 3780/var2: 3400):
+Wed 27 Oct 2021 03:51:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:52:01 AM UTC : Battery (var1: 3783/var2: 3400):
+Wed 27 Oct 2021 03:52:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:53:01 AM UTC : Battery (var1: 3786/var2: 3400):
+Wed 27 Oct 2021 03:53:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:54:01 AM UTC : Battery (var1: 3786/var2: 3400):
+Wed 27 Oct 2021 03:54:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:55:01 AM UTC : Battery (var1: 3786/var2: 3400):
+Wed 27 Oct 2021 03:55:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:56:01 AM UTC : Battery (var1: 3788/var2: 3400):
+Wed 27 Oct 2021 03:56:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:57:01 AM UTC : Battery (var1: 3793/var2: 3400):
+Wed 27 Oct 2021 03:57:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:58:01 AM UTC : Battery (var1: 3792/var2: 3400):
+Wed 27 Oct 2021 03:58:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 03:59:02 AM UTC : Battery (var1: 3795/var2: 3400):
+Wed 27 Oct 2021 03:59:02 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:00:01 AM UTC : Battery (var1: 3795/var2: 3400):
+Wed 27 Oct 2021 04:00:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:01:01 AM UTC : Battery (var1: 3795/var2: 3400):
+Wed 27 Oct 2021 04:01:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:02:01 AM UTC : Battery (var1: 3800/var2: 3400):
+Wed 27 Oct 2021 04:02:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:03:01 AM UTC : Battery (var1: 3802/var2: 3400):
+Wed 27 Oct 2021 04:03:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:04:01 AM UTC : Battery (var1: 3802/var2: 3400):
+Wed 27 Oct 2021 04:04:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:05:01 AM UTC : Battery (var1: 3802/var2: 3400):
+Wed 27 Oct 2021 04:05:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:06:01 AM UTC : Battery (var1: 3805/var2: 3400):
+Wed 27 Oct 2021 04:06:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:07:01 AM UTC : Battery (var1: 3807/var2: 3400):
+Wed 27 Oct 2021 04:07:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:08:01 AM UTC : Battery (var1: 3809/var2: 3400):
+Wed 27 Oct 2021 04:08:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:09:01 AM UTC : Battery (var1: 3810/var2: 3400):
+Wed 27 Oct 2021 04:09:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:10:01 AM UTC : Battery (var1: 3812/var2: 3400):
+Wed 27 Oct 2021 04:10:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:11:01 AM UTC : Battery (var1: 3814/var2: 3400):
+Wed 27 Oct 2021 04:11:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:12:01 AM UTC : Battery (var1: 3816/var2: 3400):
+Wed 27 Oct 2021 04:12:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:13:01 AM UTC : Battery (var1: 3817/var2: 3400):
+Wed 27 Oct 2021 04:13:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:14:01 AM UTC : Battery (var1: 3822/var2: 3400):
+Wed 27 Oct 2021 04:14:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:15:01 AM UTC : Battery (var1: 3826/var2: 3400):
+Wed 27 Oct 2021 04:15:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:16:01 AM UTC : Battery (var1: 3822/var2: 3400):
+Wed 27 Oct 2021 04:16:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:17:01 AM UTC : Battery (var1: 3828/var2: 3400):
+Wed 27 Oct 2021 04:17:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:18:01 AM UTC : Battery (var1: 3831/var2: 3400):
+Wed 27 Oct 2021 04:18:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:19:01 AM UTC : Battery (var1: 3834/var2: 3400):
+Wed 27 Oct 2021 04:19:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:20:01 AM UTC : Battery (var1: 3833/var2: 3400):
+Wed 27 Oct 2021 04:20:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:21:01 AM UTC : Battery (var1: 3836/var2: 3400):
+Wed 27 Oct 2021 04:21:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:22:01 AM UTC : Battery (var1: 3836/var2: 3400):
+Wed 27 Oct 2021 04:22:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:23:01 AM UTC : Battery (var1: 3841/var2: 3400):
+Wed 27 Oct 2021 04:23:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:24:02 AM UTC : Battery (var1: 3841/var2: 3400):
+Wed 27 Oct 2021 04:24:02 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:25:01 AM UTC : Battery (var1: 3843/var2: 3400):
+Wed 27 Oct 2021 04:25:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:26:01 AM UTC : Battery (var1: 3846/var2: 3400):
+Wed 27 Oct 2021 04:26:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:27:01 AM UTC : Battery (var1: 3850/var2: 3400):
+Wed 27 Oct 2021 04:27:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:28:01 AM UTC : Battery (var1: 3852/var2: 3400):
+Wed 27 Oct 2021 04:28:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:29:01 AM UTC : Battery (var1: 3852/var2: 3400):
+Wed 27 Oct 2021 04:29:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:30:01 AM UTC : Battery (var1: 3855/var2: 3400):
+Wed 27 Oct 2021 04:30:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:31:01 AM UTC : Battery (var1: 3860/var2: 3400):
+Wed 27 Oct 2021 04:31:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:32:01 AM UTC : Battery (var1: 3858/var2: 3400):
+Wed 27 Oct 2021 04:32:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:33:01 AM UTC : Battery (var1: 3864/var2: 3400):
+Wed 27 Oct 2021 04:33:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:34:01 AM UTC : Battery (var1: 3864/var2: 3400):
+Wed 27 Oct 2021 04:34:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:35:01 AM UTC : Battery (var1: 3869/var2: 3400):
+Wed 27 Oct 2021 04:35:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:36:01 AM UTC : Battery (var1: 3870/var2: 3400):
+Wed 27 Oct 2021 04:36:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:37:01 AM UTC : Battery (var1: 3874/var2: 3400):
+Wed 27 Oct 2021 04:37:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:38:01 AM UTC : Battery (var1: 3872/var2: 3400):
+Wed 27 Oct 2021 04:38:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:39:01 AM UTC : Battery (var1: 3879/var2: 3400):
+Wed 27 Oct 2021 04:39:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:40:01 AM UTC : Battery (var1: 3881/var2: 3400):
+Wed 27 Oct 2021 04:40:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:41:01 AM UTC : Battery (var1: 3881/var2: 3400):
+Wed 27 Oct 2021 04:41:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:42:01 AM UTC : Battery (var1: 3884/var2: 3400):
+Wed 27 Oct 2021 04:42:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:43:01 AM UTC : Battery (var1: 3886/var2: 3400):
+Wed 27 Oct 2021 04:43:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:44:01 AM UTC : Battery (var1: 3889/var2: 3400):
+Wed 27 Oct 2021 04:44:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:45:01 AM UTC : Battery (var1: 3893/var2: 3400):
+Wed 27 Oct 2021 04:45:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:46:01 AM UTC : Battery (var1: 3896/var2: 3400):
+Wed 27 Oct 2021 04:46:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:47:01 AM UTC : Battery (var1: 3898/var2: 3400):
+Wed 27 Oct 2021 04:47:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:48:01 AM UTC : Battery (var1: 3898/var2: 3400):
+Wed 27 Oct 2021 04:48:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:49:02 AM UTC : Battery (var1: 3905/var2: 3400):
+Wed 27 Oct 2021 04:49:02 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:50:01 AM UTC : Battery (var1: 3903/var2: 3400):
+Wed 27 Oct 2021 04:50:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:51:01 AM UTC : Battery (var1: 3906/var2: 3400):
+Wed 27 Oct 2021 04:51:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:52:01 AM UTC : Battery (var1: 3908/var2: 3400):
+Wed 27 Oct 2021 04:52:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:53:01 AM UTC : Battery (var1: 3912/var2: 3400):
+Wed 27 Oct 2021 04:53:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:54:01 AM UTC : Battery (var1: 3913/var2: 3400):
+Wed 27 Oct 2021 04:54:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:55:01 AM UTC : Battery (var1: 3917/var2: 3400):
+Wed 27 Oct 2021 04:55:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:56:01 AM UTC : Battery (var1: 3922/var2: 3400):
+Wed 27 Oct 2021 04:56:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:57:01 AM UTC : Battery (var1: 3925/var2: 3400):
+Wed 27 Oct 2021 04:57:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:58:01 AM UTC : Battery (var1: 3927/var2: 3400):
+Wed 27 Oct 2021 04:58:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 04:59:01 AM UTC : Battery (var1: 3929/var2: 3400):
+Wed 27 Oct 2021 04:59:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:00:01 AM UTC : Battery (var1: 3930/var2: 3400):
+Wed 27 Oct 2021 05:00:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:01:01 AM UTC : Battery (var1: 3934/var2: 3400):
+Wed 27 Oct 2021 05:01:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:02:02 AM UTC : Battery (var1: 3937/var2: 3400):
+Wed 27 Oct 2021 05:02:02 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:03:01 AM UTC : Battery (var1: 3939/var2: 3400):
+Wed 27 Oct 2021 05:03:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:04:01 AM UTC : Battery (var1: 3941/var2: 3400):
+Wed 27 Oct 2021 05:04:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:05:01 AM UTC : Battery (var1: 3946/var2: 3400):
+Wed 27 Oct 2021 05:05:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:06:01 AM UTC : Battery (var1: 3948/var2: 3400):
+Wed 27 Oct 2021 05:06:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:07:01 AM UTC : Battery (var1: 3951/var2: 3400):
+Wed 27 Oct 2021 05:07:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:08:01 AM UTC : Battery (var1: 3953/var2: 3400):
+Wed 27 Oct 2021 05:08:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:09:01 AM UTC : Battery (var1: 3956/var2: 3400):
+Wed 27 Oct 2021 05:09:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:10:01 AM UTC : Battery (var1: 3960/var2: 3400):
+Wed 27 Oct 2021 05:10:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:11:01 AM UTC : Battery (var1: 3960/var2: 3400):
+Wed 27 Oct 2021 05:11:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:12:01 AM UTC : Battery (var1: 3963/var2: 3400):
+Wed 27 Oct 2021 05:12:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:13:01 AM UTC : Battery (var1: 3966/var2: 3400):
+Wed 27 Oct 2021 05:13:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:14:01 AM UTC : Battery (var1: 3965/var2: 3400):
+Wed 27 Oct 2021 05:14:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:15:01 AM UTC : Battery (var1: 3972/var2: 3400):
+Wed 27 Oct 2021 05:15:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:16:01 AM UTC : Battery (var1: 3973/var2: 3400):
+Wed 27 Oct 2021 05:16:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:17:01 AM UTC : Battery (var1: 3975/var2: 3400):
+Wed 27 Oct 2021 05:17:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:18:01 AM UTC : Battery (var1: 3980/var2: 3400):
+Wed 27 Oct 2021 05:18:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:19:01 AM UTC : Battery (var1: 3978/var2: 3400):
+Wed 27 Oct 2021 05:19:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:20:01 AM UTC : Battery (var1: 3982/var2: 3400):
+Wed 27 Oct 2021 05:20:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:21:01 AM UTC : Battery (var1: 3987/var2: 3400):
+Wed 27 Oct 2021 05:21:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:22:01 AM UTC : Battery (var1: 3990/var2: 3400):
+Wed 27 Oct 2021 05:22:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:23:01 AM UTC : Battery (var1: 3989/var2: 3400):
+Wed 27 Oct 2021 05:23:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:24:01 AM UTC : Battery (var1: 3996/var2: 3400):
+Wed 27 Oct 2021 05:24:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:25:01 AM UTC : Battery (var1: 3997/var2: 3400):
+Wed 27 Oct 2021 05:25:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:26:01 AM UTC : Battery (var1: 4001/var2: 3400):
+Wed 27 Oct 2021 05:26:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:27:02 AM UTC : Battery (var1: 4002/var2: 3400):
+Wed 27 Oct 2021 05:27:02 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:28:01 AM UTC : Battery (var1: 4008/var2: 3400):
+Wed 27 Oct 2021 05:28:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:29:01 AM UTC : Battery (var1: 4008/var2: 3400):
+Wed 27 Oct 2021 05:29:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:30:01 AM UTC : Battery (var1: 4011/var2: 3400):
+Wed 27 Oct 2021 05:30:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:31:01 AM UTC : Battery (var1: 4014/var2: 3400):
+Wed 27 Oct 2021 05:31:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:32:01 AM UTC : Battery (var1: 4018/var2: 3400):
+Wed 27 Oct 2021 05:32:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:33:01 AM UTC : Battery (var1: 4018/var2: 3400):
+Wed 27 Oct 2021 05:33:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:34:01 AM UTC : Battery (var1: 4021/var2: 3400):
+Wed 27 Oct 2021 05:34:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:35:01 AM UTC : Battery (var1: 4025/var2: 3400):
+Wed 27 Oct 2021 05:35:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:36:01 AM UTC : Battery (var1: 4026/var2: 3400):
+Wed 27 Oct 2021 05:36:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:37:01 AM UTC : Battery (var1: 4030/var2: 3400):
+Wed 27 Oct 2021 05:37:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:38:01 AM UTC : Battery (var1: 4033/var2: 3400):
+Wed 27 Oct 2021 05:38:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:39:01 AM UTC : Battery (var1: 4035/var2: 3400):
+Wed 27 Oct 2021 05:39:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:40:01 AM UTC : Battery (var1: 4037/var2: 3400):
+Wed 27 Oct 2021 05:40:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:41:01 AM UTC : Battery (var1: 4042/var2: 3400):
+Wed 27 Oct 2021 05:41:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:42:01 AM UTC : Battery (var1: 4044/var2: 3400):
+Wed 27 Oct 2021 05:42:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:43:01 AM UTC : Battery (var1: 4044/var2: 3400):
+Wed 27 Oct 2021 05:43:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:44:01 AM UTC : Battery (var1: 4047/var2: 3400):
+Wed 27 Oct 2021 05:44:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:45:01 AM UTC : Battery (var1: 4052/var2: 3400):
+Wed 27 Oct 2021 05:45:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:46:01 AM UTC : Battery (var1: 4056/var2: 3400):
+Wed 27 Oct 2021 05:46:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:47:01 AM UTC : Battery (var1: 4056/var2: 3400):
+Wed 27 Oct 2021 05:47:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:48:01 AM UTC : Battery (var1: 4057/var2: 3400):
+Wed 27 Oct 2021 05:48:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:49:01 AM UTC : Battery (var1: 4064/var2: 3400):
+Wed 27 Oct 2021 05:49:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:50:01 AM UTC : Battery (var1: 4064/var2: 3400):
+Wed 27 Oct 2021 05:50:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:51:01 AM UTC : Battery (var1: 4068/var2: 3400):
+Wed 27 Oct 2021 05:51:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:52:02 AM UTC : Battery (var1: 4071/var2: 3400):
+Wed 27 Oct 2021 05:52:02 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:53:01 AM UTC : Battery (var1: 4073/var2: 3400):
+Wed 27 Oct 2021 05:53:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:54:01 AM UTC : Battery (var1: 4076/var2: 3400):
+Wed 27 Oct 2021 05:54:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:55:01 AM UTC : Battery (var1: 4076/var2: 3400):
+Wed 27 Oct 2021 05:55:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:56:01 AM UTC : Battery (var1: 4083/var2: 3400):
+Wed 27 Oct 2021 05:56:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:57:01 AM UTC : Battery (var1: 4083/var2: 3400):
+Wed 27 Oct 2021 05:57:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:58:01 AM UTC : Battery (var1: 4085/var2: 3400):
+Wed 27 Oct 2021 05:58:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 05:59:01 AM UTC : Battery (var1: 4090/var2: 3400):
+Wed 27 Oct 2021 05:59:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:00:01 AM UTC : Battery (var1: 4093/var2: 3400):
+Wed 27 Oct 2021 06:00:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:01:01 AM UTC : Battery (var1: 4095/var2: 3400):
+Wed 27 Oct 2021 06:01:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:02:01 AM UTC : Battery (var1: 4098/var2: 3400):
+Wed 27 Oct 2021 06:02:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:03:01 AM UTC : Battery (var1: 4102/var2: 3400):
+Wed 27 Oct 2021 06:03:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:04:01 AM UTC : Battery (var1: 4104/var2: 3400):
+Wed 27 Oct 2021 06:04:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:05:02 AM UTC : Battery (var1: 4109/var2: 3400):
+Wed 27 Oct 2021 06:05:02 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:06:01 AM UTC : Battery (var1: 4107/var2: 3400):
+Wed 27 Oct 2021 06:06:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:07:01 AM UTC : Battery (var1: 4112/var2: 3400):
+Wed 27 Oct 2021 06:07:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:08:01 AM UTC : Battery (var1: 4112/var2: 3400):
+Wed 27 Oct 2021 06:08:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:09:01 AM UTC : Battery (var1: 4116/var2: 3400):
+Wed 27 Oct 2021 06:09:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:10:01 AM UTC : Battery (var1: 4121/var2: 3400):
+Wed 27 Oct 2021 06:10:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:11:01 AM UTC : Battery (var1: 4122/var2: 3400):
+Wed 27 Oct 2021 06:11:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:12:01 AM UTC : Battery (var1: 4124/var2: 3400):
+Wed 27 Oct 2021 06:12:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:13:01 AM UTC : Battery (var1: 4129/var2: 3400):
+Wed 27 Oct 2021 06:13:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:14:01 AM UTC : Battery (var1: 4129/var2: 3400):
+Wed 27 Oct 2021 06:14:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:15:01 AM UTC : Battery (var1: 4133/var2: 3400):
+Wed 27 Oct 2021 06:15:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:16:01 AM UTC : Battery (var1: 4136/var2: 3400):
+Wed 27 Oct 2021 06:16:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:17:02 AM UTC : Battery (var1: 4140/var2: 3400):
+Wed 27 Oct 2021 06:17:02 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:18:01 AM UTC : Battery (var1: 4141/var2: 3400):
+Wed 27 Oct 2021 06:18:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:19:01 AM UTC : Battery (var1: 4146/var2: 3400):
+Wed 27 Oct 2021 06:19:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:20:01 AM UTC : Battery (var1: 4148/var2: 3400):
+Wed 27 Oct 2021 06:20:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:21:01 AM UTC : Battery (var1: 4150/var2: 3400):
+Wed 27 Oct 2021 06:21:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:22:01 AM UTC : Battery (var1: 4153/var2: 3400):
+Wed 27 Oct 2021 06:22:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:23:01 AM UTC : Battery (var1: 4157/var2: 3400):
+Wed 27 Oct 2021 06:23:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:24:01 AM UTC : Battery (var1: 4160/var2: 3400):
+Wed 27 Oct 2021 06:24:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:25:01 AM UTC : Battery (var1: 4164/var2: 3400):
+Wed 27 Oct 2021 06:25:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:26:01 AM UTC : Battery (var1: 4167/var2: 3400):
+Wed 27 Oct 2021 06:26:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:27:01 AM UTC : Battery (var1: 4169/var2: 3400):
+Wed 27 Oct 2021 06:27:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:28:01 AM UTC : Battery (var1: 4169/var2: 3400):
+Wed 27 Oct 2021 06:28:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:29:01 AM UTC : Battery (var1: 4170/var2: 3400):
+Wed 27 Oct 2021 06:29:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:30:01 AM UTC : Battery (var1: 4174/var2: 3400):
+Wed 27 Oct 2021 06:30:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:31:01 AM UTC : Battery (var1: 4177/var2: 3400):
+Wed 27 Oct 2021 06:31:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:32:01 AM UTC : Battery (var1: 4179/var2: 3400):
+Wed 27 Oct 2021 06:32:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:33:01 AM UTC : Battery (var1: 4181/var2: 3400):
+Wed 27 Oct 2021 06:33:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:34:01 AM UTC : Battery (var1: 4186/var2: 3400):
+Wed 27 Oct 2021 06:34:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:35:01 AM UTC : Battery (var1: 4186/var2: 3400):
+Wed 27 Oct 2021 06:35:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:36:01 AM UTC : Battery (var1: 4188/var2: 3400):
+Wed 27 Oct 2021 06:36:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:37:01 AM UTC : Battery (var1: 4189/var2: 3400):
+Wed 27 Oct 2021 06:37:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:38:01 AM UTC : Battery (var1: 4193/var2: 3400):
+Wed 27 Oct 2021 06:38:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:39:01 AM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 06:39:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:40:01 AM UTC : Battery (var1: 4191/var2: 3400):
+Wed 27 Oct 2021 06:40:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:41:01 AM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 06:41:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:42:02 AM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 06:42:02 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:43:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 06:43:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:44:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 06:44:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:45:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 06:45:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:46:01 AM UTC : Battery (var1: 4203/var2: 3400):
+Wed 27 Oct 2021 06:46:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:47:01 AM UTC : Battery (var1: 4203/var2: 3400):
+Wed 27 Oct 2021 06:47:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:48:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 06:48:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:49:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 06:49:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:50:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 06:50:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:51:01 AM UTC : Battery (var1: 4208/var2: 3400):
+Wed 27 Oct 2021 06:51:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:52:01 AM UTC : Battery (var1: 4206/var2: 3400):
+Wed 27 Oct 2021 06:52:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:53:01 AM UTC : Battery (var1: 4210/var2: 3400):
+Wed 27 Oct 2021 06:53:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:54:01 AM UTC : Battery (var1: 4206/var2: 3400):
+Wed 27 Oct 2021 06:54:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:55:01 AM UTC : Battery (var1: 4212/var2: 3400):
+Wed 27 Oct 2021 06:55:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:56:01 AM UTC : Battery (var1: 4212/var2: 3400):
+Wed 27 Oct 2021 06:56:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:57:01 AM UTC : Battery (var1: 4213/var2: 3400):
+Wed 27 Oct 2021 06:57:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:58:01 AM UTC : Battery (var1: 4215/var2: 3400):
+Wed 27 Oct 2021 06:58:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 06:59:01 AM UTC : Battery (var1: 4215/var2: 3400):
+Wed 27 Oct 2021 06:59:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:00:01 AM UTC : Battery (var1: 4215/var2: 3400):
+Wed 27 Oct 2021 07:00:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:01:01 AM UTC : Battery (var1: 4217/var2: 3400):
+Wed 27 Oct 2021 07:01:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:02:01 AM UTC : Battery (var1: 4215/var2: 3400):
+Wed 27 Oct 2021 07:02:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:03:01 AM UTC : Battery (var1: 4217/var2: 3400):
+Wed 27 Oct 2021 07:03:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:04:01 AM UTC : Battery (var1: 4218/var2: 3400):
+Wed 27 Oct 2021 07:04:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:05:01 AM UTC : Battery (var1: 4220/var2: 3400):
+Wed 27 Oct 2021 07:05:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:06:01 AM UTC : Battery (var1: 4218/var2: 3400):
+Wed 27 Oct 2021 07:06:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:07:02 AM UTC : Battery (var1: 4222/var2: 3400):
+Wed 27 Oct 2021 07:07:02 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:08:01 AM UTC : Battery (var1: 4222/var2: 3400):
+Wed 27 Oct 2021 07:08:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:09:01 AM UTC : Battery (var1: 4222/var2: 3400):
+Wed 27 Oct 2021 07:09:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:10:01 AM UTC : Battery (var1: 4222/var2: 3400):
+Wed 27 Oct 2021 07:10:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:11:01 AM UTC : Battery (var1: 4222/var2: 3400):
+Wed 27 Oct 2021 07:11:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:12:01 AM UTC : Battery (var1: 4222/var2: 3400):
+Wed 27 Oct 2021 07:12:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:13:01 AM UTC : Battery (var1: 4222/var2: 3400):
+Wed 27 Oct 2021 07:13:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:14:01 AM UTC : Battery (var1: 4224/var2: 3400):
+Wed 27 Oct 2021 07:14:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:15:01 AM UTC : Battery (var1: 4224/var2: 3400):
+Wed 27 Oct 2021 07:15:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:16:01 AM UTC : Battery (var1: 4224/var2: 3400):
+Wed 27 Oct 2021 07:16:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:17:01 AM UTC : Battery (var1: 4225/var2: 3400):
+Wed 27 Oct 2021 07:17:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:18:01 AM UTC : Battery (var1: 4225/var2: 3400):
+Wed 27 Oct 2021 07:18:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:19:01 AM UTC : Battery (var1: 4227/var2: 3400):
+Wed 27 Oct 2021 07:19:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:20:02 AM UTC : Battery (var1: 4227/var2: 3400):
+Wed 27 Oct 2021 07:20:02 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:21:01 AM UTC : Battery (var1: 4227/var2: 3400):
+Wed 27 Oct 2021 07:21:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:22:01 AM UTC : Battery (var1: 4227/var2: 3400):
+Wed 27 Oct 2021 07:22:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:23:01 AM UTC : Battery (var1: 4227/var2: 3400):
+Wed 27 Oct 2021 07:23:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:24:01 AM UTC : Battery (var1: 4227/var2: 3400):
+Wed 27 Oct 2021 07:24:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:25:01 AM UTC : Battery (var1: 4229/var2: 3400):
+Wed 27 Oct 2021 07:25:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:26:01 AM UTC : Battery (var1: 4229/var2: 3400):
+Wed 27 Oct 2021 07:26:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:27:01 AM UTC : Battery (var1: 4229/var2: 3400):
+Wed 27 Oct 2021 07:27:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:28:01 AM UTC : Battery (var1: 4229/var2: 3400):
+Wed 27 Oct 2021 07:28:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:29:01 AM UTC : Battery (var1: 4229/var2: 3400):
+Wed 27 Oct 2021 07:29:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:30:01 AM UTC : Battery (var1: 4229/var2: 3400):
+Wed 27 Oct 2021 07:30:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:31:01 AM UTC : Battery (var1: 4229/var2: 3400):
+Wed 27 Oct 2021 07:31:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:32:01 AM UTC : Battery (var1: 4229/var2: 3400):
+Wed 27 Oct 2021 07:32:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:33:01 AM UTC : Battery (var1: 4227/var2: 3400):
+Wed 27 Oct 2021 07:33:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:34:01 AM UTC : Battery (var1: 4229/var2: 3400):
+Wed 27 Oct 2021 07:34:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:35:01 AM UTC : Battery (var1: 4230/var2: 3400):
+Wed 27 Oct 2021 07:35:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:36:01 AM UTC : Battery (var1: 4229/var2: 3400):
+Wed 27 Oct 2021 07:36:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:37:01 AM UTC : Battery (var1: 4229/var2: 3400):
+Wed 27 Oct 2021 07:37:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:38:01 AM UTC : Battery (var1: 4229/var2: 3400):
+Wed 27 Oct 2021 07:38:01 AM UTC : Charging State:  2
+Wed 27 Oct 2021 07:39:01 AM UTC : Battery (var1: 4222/var2: 3400):
+Wed 27 Oct 2021 07:39:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 07:40:01 AM UTC : Battery (var1: 4217/var2: 3400):
+Wed 27 Oct 2021 07:40:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 07:41:01 AM UTC : Battery (var1: 4218/var2: 3400):
+Wed 27 Oct 2021 07:41:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 07:42:01 AM UTC : Battery (var1: 4213/var2: 3400):
+Wed 27 Oct 2021 07:42:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 07:43:01 AM UTC : Battery (var1: 4217/var2: 3400):
+Wed 27 Oct 2021 07:43:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 07:44:01 AM UTC : Battery (var1: 4215/var2: 3400):
+Wed 27 Oct 2021 07:44:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 07:45:02 AM UTC : Battery (var1: 4215/var2: 3400):
+Wed 27 Oct 2021 07:45:02 AM UTC : Charging State:  1
+Wed 27 Oct 2021 07:46:01 AM UTC : Battery (var1: 4215/var2: 3400):
+Wed 27 Oct 2021 07:46:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 07:47:01 AM UTC : Battery (var1: 4215/var2: 3400):
+Wed 27 Oct 2021 07:47:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 07:48:01 AM UTC : Battery (var1: 4213/var2: 3400):
+Wed 27 Oct 2021 07:48:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 07:49:01 AM UTC : Battery (var1: 4213/var2: 3400):
+Wed 27 Oct 2021 07:49:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 07:50:01 AM UTC : Battery (var1: 4215/var2: 3400):
+Wed 27 Oct 2021 07:50:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 07:51:01 AM UTC : Battery (var1: 4213/var2: 3400):
+Wed 27 Oct 2021 07:51:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 07:52:01 AM UTC : Battery (var1: 4213/var2: 3400):
+Wed 27 Oct 2021 07:52:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 07:53:01 AM UTC : Battery (var1: 4213/var2: 3400):
+Wed 27 Oct 2021 07:53:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 07:54:01 AM UTC : Battery (var1: 4208/var2: 3400):
+Wed 27 Oct 2021 07:54:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 07:55:01 AM UTC : Battery (var1: 4212/var2: 3400):
+Wed 27 Oct 2021 07:55:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 07:56:01 AM UTC : Battery (var1: 4212/var2: 3400):
+Wed 27 Oct 2021 07:56:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 07:57:01 AM UTC : Battery (var1: 4212/var2: 3400):
+Wed 27 Oct 2021 07:57:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 07:58:01 AM UTC : Battery (var1: 4212/var2: 3400):
+Wed 27 Oct 2021 07:58:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 07:59:01 AM UTC : Battery (var1: 4212/var2: 3400):
+Wed 27 Oct 2021 07:59:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:00:01 AM UTC : Battery (var1: 4210/var2: 3400):
+Wed 27 Oct 2021 08:00:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:01:01 AM UTC : Battery (var1: 4208/var2: 3400):
+Wed 27 Oct 2021 08:01:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:02:01 AM UTC : Battery (var1: 4210/var2: 3400):
+Wed 27 Oct 2021 08:02:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:03:01 AM UTC : Battery (var1: 4210/var2: 3400):
+Wed 27 Oct 2021 08:03:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:04:01 AM UTC : Battery (var1: 4208/var2: 3400):
+Wed 27 Oct 2021 08:04:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:05:01 AM UTC : Battery (var1: 4206/var2: 3400):
+Wed 27 Oct 2021 08:05:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:06:01 AM UTC : Battery (var1: 4208/var2: 3400):
+Wed 27 Oct 2021 08:06:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:07:01 AM UTC : Battery (var1: 4210/var2: 3400):
+Wed 27 Oct 2021 08:07:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:08:01 AM UTC : Battery (var1: 4208/var2: 3400):
+Wed 27 Oct 2021 08:08:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:09:01 AM UTC : Battery (var1: 4208/var2: 3400):
+Wed 27 Oct 2021 08:09:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:10:02 AM UTC : Battery (var1: 4208/var2: 3400):
+Wed 27 Oct 2021 08:10:02 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:11:01 AM UTC : Battery (var1: 4210/var2: 3400):
+Wed 27 Oct 2021 08:11:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:12:01 AM UTC : Battery (var1: 4208/var2: 3400):
+Wed 27 Oct 2021 08:12:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:13:01 AM UTC : Battery (var1: 4208/var2: 3400):
+Wed 27 Oct 2021 08:13:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:14:01 AM UTC : Battery (var1: 4208/var2: 3400):
+Wed 27 Oct 2021 08:14:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:15:01 AM UTC : Battery (var1: 4206/var2: 3400):
+Wed 27 Oct 2021 08:15:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:16:01 AM UTC : Battery (var1: 4208/var2: 3400):
+Wed 27 Oct 2021 08:16:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:17:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 08:17:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:18:01 AM UTC : Battery (var1: 4208/var2: 3400):
+Wed 27 Oct 2021 08:18:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:19:01 AM UTC : Battery (var1: 4208/var2: 3400):
+Wed 27 Oct 2021 08:19:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:20:01 AM UTC : Battery (var1: 4206/var2: 3400):
+Wed 27 Oct 2021 08:20:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:21:01 AM UTC : Battery (var1: 4206/var2: 3400):
+Wed 27 Oct 2021 08:21:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:22:01 AM UTC : Battery (var1: 4208/var2: 3400):
+Wed 27 Oct 2021 08:22:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:23:01 AM UTC : Battery (var1: 4208/var2: 3400):
+Wed 27 Oct 2021 08:23:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:24:01 AM UTC : Battery (var1: 4208/var2: 3400):
+Wed 27 Oct 2021 08:24:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:25:01 AM UTC : Battery (var1: 4206/var2: 3400):
+Wed 27 Oct 2021 08:25:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:26:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 08:26:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:27:01 AM UTC : Battery (var1: 4208/var2: 3400):
+Wed 27 Oct 2021 08:27:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:28:01 AM UTC : Battery (var1: 4206/var2: 3400):
+Wed 27 Oct 2021 08:28:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:29:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 08:29:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:30:01 AM UTC : Battery (var1: 4206/var2: 3400):
+Wed 27 Oct 2021 08:30:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:31:01 AM UTC : Battery (var1: 4203/var2: 3400):
+Wed 27 Oct 2021 08:31:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:32:01 AM UTC : Battery (var1: 4206/var2: 3400):
+Wed 27 Oct 2021 08:32:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:33:01 AM UTC : Battery (var1: 4206/var2: 3400):
+Wed 27 Oct 2021 08:33:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:34:01 AM UTC : Battery (var1: 4206/var2: 3400):
+Wed 27 Oct 2021 08:34:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:35:02 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 08:35:02 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:36:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 08:36:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:37:01 AM UTC : Battery (var1: 4206/var2: 3400):
+Wed 27 Oct 2021 08:37:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:38:01 AM UTC : Battery (var1: 4206/var2: 3400):
+Wed 27 Oct 2021 08:38:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:39:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 08:39:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:40:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 08:40:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:41:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 08:41:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:42:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 08:42:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:43:01 AM UTC : Battery (var1: 4206/var2: 3400):
+Wed 27 Oct 2021 08:43:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:44:01 AM UTC : Battery (var1: 4206/var2: 3400):
+Wed 27 Oct 2021 08:44:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:45:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 08:45:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:46:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 08:46:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:47:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 08:47:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:48:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 08:48:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:49:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 08:49:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:50:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 08:50:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:51:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 08:51:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:52:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 08:52:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:53:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 08:53:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:54:01 AM UTC : Battery (var1: 4203/var2: 3400):
+Wed 27 Oct 2021 08:54:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:55:01 AM UTC : Battery (var1: 4203/var2: 3400):
+Wed 27 Oct 2021 08:55:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:56:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 08:56:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:57:01 AM UTC : Battery (var1: 4203/var2: 3400):
+Wed 27 Oct 2021 08:57:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:58:01 AM UTC : Battery (var1: 4203/var2: 3400):
+Wed 27 Oct 2021 08:58:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 08:59:01 AM UTC : Battery (var1: 4203/var2: 3400):
+Wed 27 Oct 2021 08:59:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:00:02 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:00:02 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:01:01 AM UTC : Battery (var1: 4203/var2: 3400):
+Wed 27 Oct 2021 09:01:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:02:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 09:02:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:03:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:03:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:04:01 AM UTC : Battery (var1: 4203/var2: 3400):
+Wed 27 Oct 2021 09:04:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:05:01 AM UTC : Battery (var1: 4203/var2: 3400):
+Wed 27 Oct 2021 09:05:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:06:01 AM UTC : Battery (var1: 4203/var2: 3400):
+Wed 27 Oct 2021 09:06:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:07:01 AM UTC : Battery (var1: 4205/var2: 3400):
+Wed 27 Oct 2021 09:07:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:08:01 AM UTC : Battery (var1: 4203/var2: 3400):
+Wed 27 Oct 2021 09:08:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:09:01 AM UTC : Battery (var1: 4203/var2: 3400):
+Wed 27 Oct 2021 09:09:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:10:01 AM UTC : Battery (var1: 4203/var2: 3400):
+Wed 27 Oct 2021 09:10:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:11:01 AM UTC : Battery (var1: 4203/var2: 3400):
+Wed 27 Oct 2021 09:11:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:12:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 09:12:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:13:01 AM UTC : Battery (var1: 4203/var2: 3400):
+Wed 27 Oct 2021 09:13:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:14:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:14:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:15:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:15:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:16:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:16:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:17:01 AM UTC : Battery (var1: 4203/var2: 3400):
+Wed 27 Oct 2021 09:17:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:18:01 AM UTC : Battery (var1: 4203/var2: 3400):
+Wed 27 Oct 2021 09:18:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:19:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:19:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:20:01 AM UTC : Battery (var1: 4203/var2: 3400):
+Wed 27 Oct 2021 09:20:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:21:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:21:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:22:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:22:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:23:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:23:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:24:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:24:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:25:02 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:25:02 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:26:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:26:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:27:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:27:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:28:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 09:28:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:29:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:29:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:30:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:30:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:31:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 09:31:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:32:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:32:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:33:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 09:33:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:34:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 09:34:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:35:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:35:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:36:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:36:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:37:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:37:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:38:02 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:38:02 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:39:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:39:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:40:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:40:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:41:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:41:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:42:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:42:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:43:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:43:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:44:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:44:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:45:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:45:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:46:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:46:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:47:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:47:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:48:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:48:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:49:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:49:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:50:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:50:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:51:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:51:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:52:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:52:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:53:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:53:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:54:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:54:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:55:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 09:55:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:56:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 09:56:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:57:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 09:57:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:58:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 09:58:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 09:59:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 09:59:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:00:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 10:00:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:01:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 10:01:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:02:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:02:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:03:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 10:03:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:04:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 10:04:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:05:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:05:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:06:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:06:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:07:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 10:07:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:08:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 10:08:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:09:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:09:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:10:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 10:10:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:11:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 10:11:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:12:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:12:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:13:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:13:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:14:01 AM UTC : Battery (var1: 4201/var2: 3400):
+Wed 27 Oct 2021 10:14:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:15:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:15:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:16:02 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:16:02 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:17:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:17:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:18:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:18:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:19:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 10:19:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:20:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:20:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:21:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:21:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:22:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:22:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:23:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:23:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:24:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:24:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:25:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:25:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:26:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:26:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:27:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:27:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:28:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:28:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:29:02 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:29:02 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:30:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:30:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:31:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:31:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:32:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:32:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:33:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:33:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:34:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:34:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:35:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 10:35:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:36:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:36:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:37:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:37:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:38:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:38:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:39:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:39:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:40:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:40:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:41:02 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:41:02 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:42:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:42:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:43:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:43:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:44:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 10:44:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:45:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:45:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:46:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 10:46:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:47:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:47:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:48:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 10:48:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:49:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:49:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:50:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:50:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:51:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 10:51:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:52:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 10:52:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:53:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:53:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:54:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:54:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:55:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:55:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:56:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:56:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:57:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:57:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:58:01 AM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 10:58:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 10:59:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 10:59:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:00:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:00:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:01:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:01:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:02:01 AM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 11:02:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:03:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:03:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:04:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 11:04:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:05:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:05:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:06:02 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 11:06:02 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:07:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:07:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:08:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:08:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:09:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:09:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:10:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:10:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:11:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:11:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:12:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 11:12:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:13:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:13:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:14:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:14:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:15:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:15:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:16:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:16:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:17:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:17:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:18:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:18:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:19:02 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:19:02 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:20:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:20:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:21:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 11:21:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:22:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:22:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:23:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 11:23:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:24:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:24:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:25:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:25:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:26:01 AM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 11:26:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:27:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:27:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:28:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:28:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:29:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:29:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:30:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:30:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:31:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:31:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:32:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:32:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:33:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:33:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:34:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:34:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:35:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:35:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:36:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:36:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:37:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:37:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:38:01 AM UTC : Battery (var1: 4198/var2: 3400):
+Wed 27 Oct 2021 11:38:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:39:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:39:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:40:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:40:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:41:01 AM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 11:41:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:42:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:42:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:43:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:43:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:44:01 AM UTC : Battery (var1: 4200/var2: 3400):
+Wed 27 Oct 2021 11:44:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:45:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:45:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:46:02 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:46:02 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:47:01 AM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 11:47:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:48:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:48:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:49:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:49:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:50:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:50:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:51:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:51:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:52:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:52:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:53:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:53:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:54:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:54:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:55:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:55:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:56:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:56:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:57:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:57:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:58:01 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:58:01 AM UTC : Charging State:  1
+Wed 27 Oct 2021 11:59:02 AM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 11:59:02 AM UTC : Charging State:  1
+Wed 27 Oct 2021 12:00:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:00:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:01:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:01:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:02:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:02:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:03:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:03:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:04:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:04:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:05:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:05:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:06:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 12:06:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:07:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:07:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:08:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:08:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:09:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:09:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:10:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:10:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:11:02 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:11:02 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:12:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:12:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:13:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:13:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:14:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:14:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:15:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 12:15:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:16:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:16:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:17:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:17:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:18:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:18:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:19:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:19:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:20:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:20:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:21:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:21:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:22:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 12:22:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:23:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:23:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:24:02 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:24:02 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:25:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:25:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:26:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:26:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:27:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:27:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:28:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:28:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:29:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:29:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:30:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 12:30:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:31:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:31:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:32:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:32:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:33:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:33:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:34:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:34:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:35:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 12:35:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:36:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:36:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:37:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:37:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:38:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:38:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:39:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:39:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:40:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:40:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:41:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 12:41:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:42:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 12:42:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:43:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 12:43:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:44:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:44:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:45:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 12:45:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:46:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 12:46:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:47:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 12:47:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:48:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:48:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:49:02 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:49:02 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:50:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 12:50:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:51:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:51:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:52:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 12:52:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:53:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 12:53:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:54:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:54:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:55:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:55:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:56:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 12:56:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:57:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 12:57:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:58:01 PM UTC : Battery (var1: 4191/var2: 3400):
+Wed 27 Oct 2021 12:58:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 12:59:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 12:59:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:00:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:00:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:01:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:01:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:02:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:02:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:03:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:03:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:04:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:04:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:05:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:05:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:06:01 PM UTC : Battery (var1: 4191/var2: 3400):
+Wed 27 Oct 2021 01:06:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:07:01 PM UTC : Battery (var1: 4193/var2: 3400):
+Wed 27 Oct 2021 01:07:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:08:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:08:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:09:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 01:09:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:10:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:10:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:11:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:11:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:12:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:12:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:13:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:13:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:14:02 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:14:02 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:15:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:15:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:16:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:16:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:17:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:17:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:18:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:18:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:19:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:19:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:20:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:20:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:21:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:21:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:22:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:22:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:23:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:23:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:24:01 PM UTC : Battery (var1: 4196/var2: 3400):
+Wed 27 Oct 2021 01:24:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:25:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:25:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:26:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:26:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:27:02 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:27:02 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:28:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:28:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:29:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:29:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:30:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:30:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:31:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:31:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:32:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:32:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:33:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:33:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:34:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:34:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:35:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:35:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:36:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:36:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:37:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:37:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:38:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:38:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:39:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:39:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:40:01 PM UTC : Battery (var1: 4191/var2: 3400):
+Wed 27 Oct 2021 01:40:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:41:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:41:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:42:01 PM UTC : Battery (var1: 4191/var2: 3400):
+Wed 27 Oct 2021 01:42:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:43:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:43:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:44:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:44:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:45:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:45:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:46:01 PM UTC : Battery (var1: 4191/var2: 3400):
+Wed 27 Oct 2021 01:46:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:47:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:47:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:48:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:48:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:49:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:49:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:50:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:50:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:51:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:51:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:52:02 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:52:02 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:53:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:53:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:54:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:54:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:55:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:55:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:56:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:56:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:57:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:57:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:58:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:58:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 01:59:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 01:59:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 02:00:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 02:00:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 02:01:01 PM UTC : Battery (var1: 4191/var2: 3400):
+Wed 27 Oct 2021 02:01:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 02:02:01 PM UTC : Battery (var1: 4194/var2: 3400):
+Wed 27 Oct 2021 02:02:01 PM UTC : Charging State:  1
+Wed 27 Oct 2021 02:03:01 PM UTC : Battery (var1: 4104/var2: 3400):
+Wed 27 Oct 2021 02:03:01 PM UTC : Charging State:  0
+Wed 27 Oct 2021 02:04:01 PM UTC : Battery (var1: 4092/var2: 3400):
+Wed 27 Oct 2021 02:04:01 PM UTC : Charging State:  0
+Wed 27 Oct 2021 02:05:01 PM UTC : Battery (var1: 4074/var2: 3400):
+Wed 27 Oct 2021 02:05:01 PM UTC : Charging State:  0
+Wed 27 Oct 2021 02:06:01 PM UTC : Battery (var1: 4073/var2: 3400):
+Wed 27 Oct 2021 02:06:01 PM UTC : Charging State:  0
+Wed 27 Oct 2021 02:07:01 PM UTC : Battery (var1: 4064/var2: 3600):
+Wed 27 Oct 2021 02:07:01 PM UTC : Charging State:  0
+Wed 27 Oct 2021 02:08:01 PM UTC : Battery (var1: 4076/var2: 3600):
+Wed 27 Oct 2021 02:08:01 PM UTC : Charging State:  0
+Wed 27 Oct 2021 02:09:01 PM UTC : Battery (var1: 4052/var2: 4000):
+Wed 27 Oct 2021 02:09:01 PM UTC : Charging State:  0
+Wed 27 Oct 2021 02:10:01 PM UTC : Battery (var1: 4052/var2: 4000):
+Wed 27 Oct 2021 02:10:01 PM UTC : Charging State:  0
+Wed 27 Oct 2021 02:11:01 PM UTC : Battery (var1: 4044/var2: 4000):
+Wed 27 Oct 2021 02:11:01 PM UTC : Charging State:  0
+Wed 27 Oct 2021 02:12:01 PM UTC : Battery (var1: 4035/var2: 4000):
+Wed 27 Oct 2021 02:12:01 PM UTC : Charging State:  0
+Wed 27 Oct 2021 02:13:01 PM UTC : Battery (var1: 4021/var2: 4000):
+Wed 27 Oct 2021 02:13:01 PM UTC : Charging State:  0
+Wed 27 Oct 2021 02:14:01 PM UTC : Battery (var1: 4021/var2: 4000):
+Wed 27 Oct 2021 02:14:01 PM UTC : Charging State:  0
+Wed 27 Oct 2021 02:15:01 PM UTC : Shutdown (var1: 3994/var2: 4000):
+Wed 27 Oct 2021 02:15:01 PM UTC : Charging State:  0
+Wed 27 Oct 2021 02:15:01 PM UTC : --------------- 
+Wed 27 Oct 2021 02:15:01 PM UTC : Battery (var1: 3994/var2: 4000):
+Wed 27 Oct 2021 02:15:01 PM UTC : Charging State:  0
+Wed 27 Oct 2021 02:17:20 PM UTC : Battery (var1: 4112/var2: 4000):
+Wed 27 Oct 2021 02:17:20 PM UTC : Charging State:  1
+Wed 27 Oct 2021 02:17:20 PM UTC : Battery (var1: 4112/var2: 4000):
+Wed 27 Oct 2021 02:17:20 PM UTC : Charging State:  1
+Wed 27 Oct 2021 02:18:01 PM UTC : Battery (var1: 4114/var2: 4000):
+Wed 27 Oct 2021 02:18:01 PM UTC : Charging State:  1
