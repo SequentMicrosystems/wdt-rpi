@@ -5,7 +5,7 @@ var1=$(wdt -g vb)
 #Set the voltage threshold in millivolts
 var2=4000
 date1=$(date -u)
-logfile=/opt/wdt-ups/log/wdt
+logfile=/opt/wdt-ups/log/wdt.log
 
 state=$(wdt -g c)
 
