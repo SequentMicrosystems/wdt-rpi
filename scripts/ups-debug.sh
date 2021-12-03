@@ -7,15 +7,19 @@ if [[ -f $wdt_file ]]; then
     echo "Using $wdt_file" >> $logfile
 else
    echo "wdt executable not found" >> $logfile
-   exit 0
+   exit 1
 fi
-
 
 #Read the battery voltage
 var1=$(wdt -g vb)
 #Set the voltage threshold in millivolts
 var2=4000
 date1=$(date -u)
+
+if [[ $var1 == *Fail* ]]; then
+   echo "WDT Hardware not detected" >> $logfile
+   exit 1
+fi
 
 #Read the UPS charge state
 state=$(wdt -g c)
