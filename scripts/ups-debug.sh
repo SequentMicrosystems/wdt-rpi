@@ -4,7 +4,7 @@ wdt_file=$(which wdt)
 logfile=/opt/wdt/log/wdt.log
 
 if [[ -f $wdt_file ]]; then
-    echo "Using $wdt_file" >> $logfile
+   echo "Using $wdt_file" >> $logfile
 else
    echo "wdt executable not found" >> $logfile
    exit 1
