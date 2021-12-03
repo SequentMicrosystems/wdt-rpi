@@ -7,6 +7,11 @@ var2=4000
 date1=$(date -u)
 logfile=/opt/wdt/log/wdt.log
 
+if [[ $var1 == *Fail* ]]; then
+   echo "WDT Hardware not detected"
+   exit 1
+fi
+
 #Read the UPS charge state
 state=$(wdt -g c)
 
