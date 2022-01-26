@@ -6,7 +6,7 @@ This is the python library to control [Super-Watchdog with Battery Backup for Ra
 
 ```bash
 ~$ sudo apt-get update
-~$ sudo apt-get install build-essential python-pip python-dev python-smbus git
+~$ sudo apt-get install build-essential python-pip python-dev python-smbus
 ~$ git clone https://github.com/SequentMicrosystems/wdt-rpi.git
 ~$ cd wdt-rpi/python/wdt/
 ~/wdt-rpi/python/wdt$ sudo python setup.py install
@@ -14,7 +14,7 @@ This is the python library to control [Super-Watchdog with Battery Backup for Ra
 
 for Python 3.x usge replace the second line with:
 ```bash
-~$ sudo apt-get install build-essential python3-pip python3-dev python3-smbus git
+~$ sudo apt-get install build-essential python3-pip python3-dev python3-smbus
 ```
 and replace the last line with:
 ```bash
