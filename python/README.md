@@ -12,7 +12,11 @@ This is the python library to control [Super-Watchdog with Battery Backup for Ra
 ~/wdt-rpi/python/wdt$ sudo python setup.py install
 ```
 
-for Python 3.x usge replace last line with:
+for Python 3.x usge replace the second line with:
+```bash
+~$ sudo apt-get install build-essential python3-pip python3-dev python3-smbus git
+```
+and replace the last line with:
 ```bash
 ~/wdt-rpi/python/wdt$ sudo python3 setup.py install
 ```
