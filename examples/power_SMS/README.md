@@ -10,7 +10,7 @@ When power comes back up, the watchdog repowers the Raspberry Pi and sends anoth
  - [Super Watchdog HAT with Battery Backup for Raspberry Pi](https://sequentmicrosystems.com/collections/all-io-cards/products/raspberry-pi-battery-backup)
 
 ## Software setup:
-- Install python3 library for Super watchdog:
+- Install python3 library for super-watchdog:
 ```bash
 ~$ sudo apt-get update
 ~$ sudo apt-get install build-essential python3-pip python3-dev python3-smbus
