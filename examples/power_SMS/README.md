@@ -1,5 +1,9 @@
 # Safe shutdown example
-This example send SMS every time raspberry power turn on or off.
+In this example the super-watchdog monitors the Raspberry Pi power source.
+When power fails, it sends a text message, shuts down Raspberry Pi and goes on stand-by.
+During stand-by power consumptions is reduced to microamps.
+If the battery voltage drops below the safe limit, the watchdog shuts down completelly. 
+When power comes back up, the watchdog repowers the Raspberry Pi and sends another text message.
 
 ## Hardware components:
  - Raspberry PI (2, 3, 4, Zero, Zero 2)
@@ -67,5 +71,5 @@ sudo crontab -e
 sudo reboot
 ```
 
-Now you will receive a SMS and safetly shutdown the Pi each time the Superwotchdog run out of the main power and one SMS each time the power back on and Raspberry boot-up.
+
   
