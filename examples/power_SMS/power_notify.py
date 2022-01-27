@@ -4,10 +4,10 @@ import sys
 import requests
 from twilio.rest import Client
 
-TWILIO_ACCOUNT_SID = 'AC0fccf287a3a66ab37a4c44e90e437908' # replace with your Account SID
-TWILIO_AUTH_TOKEN = 'b746613363960903ac3738d76ea0d3db' # replace with your Auth Token
-TWILIO_PHONE_SENDER = "+16067052993" # replace with the phone number you registered in twilio
-TWILIO_PHONE_RECIPIENT = "+40755104677" # replace with your phone number
+TWILIO_ACCOUNT_SID = 'XXX' # replace with your Account SID
+TWILIO_AUTH_TOKEN = 'YYY' # replace with your Auth Token
+TWILIO_PHONE_SENDER = "+19999999999" # replace with the phone number you registered in twilio
+TWILIO_PHONE_RECIPIENT = "+42222222222" # replace with your phone number
 
 def send_text_alert(alert_str):
     """Sends an SMS text alert."""
