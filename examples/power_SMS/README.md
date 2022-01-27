@@ -2,7 +2,7 @@ This example send SMS every time raspberry power turn on or off.
 
 #Hardware:
  - Raspberry PI (2, 3, 4, zero)
- - Super Watchdog HAT with Battery Backup for Raspberry Pi
+ - [Super Watchdog HAT with Battery Backup for Raspberry Pi](https://sequentmicrosystems.com/collections/all-io-cards/products/raspberry-pi-battery-backup)
 
 #Software:
  * Install python3 library for Super watchdog:
@@ -23,7 +23,7 @@ This example send SMS every time raspberry power turn on or off.
 
  * Copy the python script to home folder:
 ```bash
-~$ cp /home/pi/wdt-rpi/examples/power_notify.py /home/pi/
+~$ cp /home/pi/wdt-rpi/examples/power_SMS/power_notify.py /home/pi/
 ```
 
  * Edit the python script and replace twilio Account SID, Token, Phone Sender from [twilio.com/console](https://www.twilio.com/login?g=%2Fconsole%3F&t=2b1c98334b25c1a785ef15b6556396290e3c704a9b57fc40687cbccd79c46a8c). Fill up your phone number in the TWILIO_PHONE_RECIPIENT variable.  
