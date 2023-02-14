@@ -20,6 +20,7 @@
 
 #define I2C_SLAVE	0x0703
 #define I2C_SMBUS	0x0720	/* SMBus-level access */
+#define I2C_MAX_BUFFER_SIZE 32
 
 int i2cSetup(int addr)
 {
@@ -28,7 +29,7 @@ int i2cSetup(int addr)
 
 	sprintf(filename, "/dev/i2c-1");
 
-	if ((file = open(filename, O_RDWR)) < 0)
+	if ( (file = open(filename, O_RDWR)) < 0)
 	{
 		printf("Failed to open the bus.");
 		return FAIL;
@@ -42,7 +43,7 @@ int i2cSetup(int addr)
 	return file;
 }
 
-int doBoardInit(int hwAdd, u8* bType)
+int doBoardInit(int hwAdd, u8 *bType)
 {
 	int dev, bV = -1;
 
@@ -175,7 +176,6 @@ int writeReg32(int dev, int add, int val)
 	return OK;
 }
 
-
 int readReg24(int dev, int add)
 {
 	int ret = 0;
@@ -218,4 +218,50 @@ int writeReg24(int dev, int add, int val)
 	}
 	return OK;
 
+}
+
+int readBuff(int dev, int add, uint8_t *data, int len)
+{
+	char buf[2];
+
+	if (NULL == data || len > I2C_MAX_BUFFER_SIZE)
+	{
+		return FAIL;
+	}
+
+	buf[0] = 0xff & add;
+
+	if (write(dev, buf, 1) != 1)
+	{
+		printf("Fail to select mem add\n");
+		return FAIL;
+	}
+
+	if (read(dev, data, len) < 1)
+	{
+		printf("Fail to read reg\n");
+		return FAIL;
+	}
+	return OK;
+}
+
+
+int writeBuff(int dev, int add, uint8_t *data, int len)
+{
+	char buf[I2C_MAX_BUFFER_SIZE];
+
+	if (NULL == data || len > I2C_MAX_BUFFER_SIZE -1)
+	{
+		return FAIL;
+	}
+
+	buf[0] = 0xff & add;
+	memcpy( buf + 1, data, len);
+
+	if (write(dev, buf, len + 1) < 1)
+	{
+		printf("Fail to select mem add\n");
+		return FAIL;
+	}
+	return OK;
 }
