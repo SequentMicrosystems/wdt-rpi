@@ -4,7 +4,7 @@
 
 #include "wdt.h"
 
-#define WDT_SOFTWARE_VER_STR  "2.01"
+#define WDT_SOFTWARE_VER_STR  "2.02"
 
 #define WDT_HW_ADD 0x30
 #define WDT_RELOAD_KEY  0xCA
@@ -27,6 +27,8 @@ char *usage = "Usage:   wdt -h/-help <command>\n"
 	"         wdt -v/-version\n"
 	"         wdt -rob/-repoweronbattery\n"
 	"         wdt -pbe/-powerbuttonenable\n"
+	"         wdt -rtc <mon> <day> <year> <hour> <min> <sec>\n"	
+	"         wdt -bint <0/1>\n"
 	"Type wdt -h <command> for more help"; // No trailing newline needed here.
 
 char *warranty =
@@ -147,11 +149,21 @@ void doHelp(int argc, char *argv[])
 		else if (strcasecmp(argv[2], "-rtc") == 0)
 		{
 			printf("\t-rtc:		  Set the RTC time and date\n");
-			printf("\tUsage:       wdt -rtc <mon> <day> <year> <hour> <min> <sec>\n");
+			printf(
+				"\tUsage:       wdt -rtc <mon> <day> <year> <hour> <min> <sec>\n");
 			printf("\tExample:     Set time and date to 02/14/2023 12:54:32\n");
-			printf("\t             wdt -rtc 2 14 2023 12 `54 32\n");
+			printf("\t             wdt -rtc 2 14 2023 12 54 32\n");
 
 		}
+		else if (strcasecmp(argv[2], "-bint") == 0)
+		{
+			printf(
+				"\t-bint:		  Enable / Disable interrupt generation on button push event\n");
+			printf("\tUsage:       wdt -bint <0/1>\n");
+			printf("\tExample:     Enable interrupt generation\n");
+			printf("\t             wdt -bint 1\n");
+		}
+
 		else
 		{
 			printf("Invalid command!\n");
@@ -423,6 +435,26 @@ static int doGet(int argc, char *argv[])
 			return NO_PRINT;
 		}
 	}
+	else if (strcasecmp(argv[2], "bint") == 0)
+	{
+		val = readBuff(dev, I2C_MEM_REVISION_MAJOR_ADD, buff, 1);
+		if (OK == val)
+		{
+			if (buff[0] < 3)
+			{
+				printf("Not available for this firmware version!\n");
+
+			}
+			else
+			{
+				val = readBuff(dev, I2C_POWER_SW_INT_OUT, buff, 1);
+				if (OK == val)
+				{
+					val = buff[0];
+				}
+			}
+		}
+	}
 	else
 	{
 		printf("Invalid  option for -get command\n");
@@ -530,13 +562,17 @@ static int doSetRtc(int argc, char *argv[])
 	hours = atoi(argv[5]);
 	min = atoi(argv[6]);
 	sec = atoi(argv[7]);
+	if (year < 2000)
+	{
+		year += 2000;
+	}
 	if (mon < 1 || mon > 12 || day < 1 || day > 31 || year < 2000 || year > 2255
 		|| hours < 0 || hours > 23 || min < 0 || min > 59 || sec < 0 || sec > 59)
 	{
 		printf("Invalid date/time usage: wdt -rtc mm dd yyyy hh mm ss\n");
 		return FAIL;
 	}
-	buff[0] = (uint8_t)(year - 2000);
+	buff[0] = (uint8_t) (year - 2000);
 	buff[1] = (uint8_t)mon;
 	buff[2] = (uint8_t)day;
 	buff[3] = (uint8_t)hours;
@@ -544,8 +580,49 @@ static int doSetRtc(int argc, char *argv[])
 	buff[5] = (uint8_t)sec;
 	buff[6] = RTC_SET_CMD;
 
-	return writeBuff(dev,I2C_RTC_SET_YEAR_ADD, buff, 7 );
+	return writeBuff(dev, I2C_RTC_SET_YEAR_ADD, buff, 7);
 
+}
+
+static int doSetButtonInt(int argc, char *argv[])
+{
+	int dev = 0;
+	int val = 0;
+	u8 bType = 0;
+	uint8_t buff[8];
+
+	if (argc != 3)
+	{
+		printf("Invalid number of arguments usage: wdt -rtc <0/1>\n");
+		return FAIL;
+	}
+	dev = doBoardInit(WDT_HW_ADD, &bType);
+	if (dev <= 0)
+	{
+		return FAIL;
+	}
+	val = readReg8(dev, I2C_CHARGE_STAT_ADD);
+	if ( (val & 0xf0) <= 0x10)
+	{
+		printf("Not available on this firmware version!\n");
+		return FAIL;
+	}
+	val = readReg8(dev, I2C_MEM_REVISION_MAJOR_ADD);
+	{
+		if (val < 3)
+		{
+			printf("Not available on this firmware version!\n");
+			return FAIL;
+		}
+	}
+	val = atoi(argv[2]);
+	if (val < 0 || val > 1)
+	{
+		printf("Invalid argument value usage: wdt -rtc <0/1>\n");
+		return FAIL;
+	}
+	buff[0] = (uint8_t)val;
+	return writeBuff(dev, I2C_POWER_SW_INT_OUT, buff, 1);
 }
 
 int main(int argc, char *argv[])
@@ -628,9 +705,13 @@ int main(int argc, char *argv[])
 	{
 		return doSetPowerButtonEnable(argc, argv);
 	}
-	if(strcasecmp(argv[1], "-rtc") == 0)
+	if (strcasecmp(argv[1], "-rtc") == 0)
 	{
 		return doSetRtc(argc, argv);
+	}
+	if (strcasecmp(argv[1], "-bint") == 0)
+	{
+		return doSetButtonInt(argc, argv);
 	}
 
 	printf("Invalid argument(s)!\n");
