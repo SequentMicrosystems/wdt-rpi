@@ -4,7 +4,7 @@
 
 #include "wdt.h"
 
-#define WDT_SOFTWARE_VER_STR  "2.02"
+#define WDT_SOFTWARE_VER_STR  "2.03"
 
 #define WDT_HW_ADD 0x30
 #define WDT_RELOAD_KEY  0xCA
@@ -125,6 +125,7 @@ void doHelp(int argc, char *argv[])
 			printf(
 				"\t             pbs/powerbuttonstatus = 1 - power button has been pushed; 0 - not  \n");
 			printf("\t             rtc (return RTC \"mm:dd:yyyy hh:mm:ss\"  \n");
+			printf("\t             t/temp = cpu temperature(degC)\n");
 			printf("\tExample:     wdt -g d get the wdt default period \n");
 		}
 		else if (strcasecmp(argv[2], "-rob") == 0
@@ -332,6 +333,10 @@ static int doGet(int argc, char *argv[])
 	else if (strcasecmp(argv[2], "v") == 0 || strcasecmp(argv[2], "vin") == 0)
 	{
 		val = readReg16(dev, I2C_5V_IN_ADD);
+	}
+	else if (strcasecmp(argv[2], "t") == 0 || strcasecmp(argv[2], "temp") == 0)
+	{
+		val = readReg8(dev, I2C_TEMP_ADD);
 	}
 	else if (strcasecmp(argv[2], "off") == 0
 		|| strcasecmp(argv[2], "offinterval") == 0)
