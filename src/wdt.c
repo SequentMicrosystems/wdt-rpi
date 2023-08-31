@@ -4,7 +4,7 @@
 
 #include "wdt.h"
 
-#define WDT_SOFTWARE_VER_STR  "2.03"
+#define WDT_SOFTWARE_VER_STR  "2.04"
 
 #define WDT_HW_ADD 0x30
 #define WDT_RELOAD_KEY  0xCA
@@ -435,8 +435,16 @@ static int doGet(int argc, char *argv[])
 		val = readBuff(dev, I2C_RTC_YEAR_ADD, buff, 6);
 		if (OK == val)
 		{
+			if(buff[0] < 10 || buff[1] > 12 || buff[1] == 0|| buff[2] > 31 || buff[2] == 0)
+			{
+				printf("RTC not present for this hardware version\n");
+				return FAIL;
+			}
+			else
+			{
 			printf("%02d/%02d/%02d %02d:%02d:%02d\n", buff[1], buff[2],
 				buff[0] + 2000, buff[3], buff[4], buff[5]);
+			}
 			return NO_PRINT;
 		}
 	}
