@@ -92,11 +92,11 @@ Set the power button push state so you can emulate the button in software or cle
  - val 0/1
 Return 1 if succeed, and -1 if fails.
 
-### rtcGet()
+### getRTC()
 Return the RTC date and time as a list
 return (year, month, day, hour, minute, seconds)
 
-### rtcSet(y, mo, d, h, m, s)
+### setRTC(y, mo, d, h, m, s)
 Set the RTC date and time
 y - year between 2000..2255 or between 0..255
 mo - month 1..12
