@@ -344,7 +344,7 @@ I2C_RTC_SET_SECOND_ADD = 42
 I2C_RTC_CMD_ADD = 43
 
 
-def rtcGet():
+def getRTC():
     bus = smbus.SMBus(1)
     try:
         buff = bus.read_i2c_block_data(HW_ADD, I2C_RTC_YEAR_ADD, 6)
@@ -356,7 +356,7 @@ def rtcGet():
     return t
 
 
-def rtcSet(y, mo, d, h, m, s):
+def setRTC(y, mo, d, h, m, s):
     if y > 2000:
         y -= 2000
     if y < 0 or y > 255:
