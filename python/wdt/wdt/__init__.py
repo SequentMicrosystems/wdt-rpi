@@ -144,7 +144,7 @@ def getVin():
 def getVrasp():
     bus = smbus.SMBus(1)
     try:
-        id = bus.read_byte_data(HW_ADD, RELOAD_ADD)
+        id = 1#  bus.read_byte_data(HW_ADD, RELOAD_ADD)
         if 1 == id:
             val = bus.read_word_data(HW_ADD, V_OUT_ADD)
             v = val / 1000.0
@@ -159,7 +159,7 @@ def getVrasp():
 def getVbat():
     bus = smbus.SMBus(1)
     try:
-        id = bus.read_byte_data(HW_ADD, RELOAD_ADD)
+        id = 1 # bus.read_byte_data(HW_ADD, RELOAD_ADD)
         if 1 == id:
             val = bus.read_word_data(HW_ADD, V_BAT_ADD)
             v = val / 1000.0
@@ -174,7 +174,7 @@ def getVbat():
 def getTemp():
     bus = smbus.SMBus(1)
     try:
-        id = bus.read_byte_data(HW_ADD, RELOAD_ADD)
+        id = 1 #bus.read_byte_data(HW_ADD, RELOAD_ADD)
         if 1 == id:
             val = bus.read_byte_data(HW_ADD, TEMP_ADD)
         else:
@@ -188,7 +188,7 @@ def getTemp():
 def getChargeStat():
     bus = smbus.SMBus(1)
     try:
-        id = bus.read_byte_data(HW_ADD, RELOAD_ADD)
+        id = 1 #bus.read_byte_data(HW_ADD, RELOAD_ADD)
         if 1 == id:
             val = 0x0f & bus.read_byte_data(HW_ADD, CHARGE_STAT_ADD)
         else:
@@ -203,7 +203,7 @@ def getRepowerOnBattery():
     bus = smbus.SMBus(1)
     val = -1
     try:
-        id = bus.read_byte_data(HW_ADD, RELOAD_ADD)
+        id = 1 #bus.read_byte_data(HW_ADD, RELOAD_ADD)
         if 1 == id:
             id = 0xf0 & bus.read_byte_data(HW_ADD, CHARGE_STAT_ADD)
             if id > 0:
@@ -226,7 +226,7 @@ def setRepowerOnBattery(val):
     else:
         val = 1
     try:
-        id = bus.read_byte_data(HW_ADD, RELOAD_ADD)
+        id = 1 #bus.read_byte_data(HW_ADD, RELOAD_ADD)
         if 1 == id:
             id = 0xf0 & bus.read_byte_data(HW_ADD, CHARGE_STAT_ADD)
             if id > 0:
@@ -242,7 +242,7 @@ def getPowerButtonEnable():
     bus = smbus.SMBus(1)
     val = 0
     try:
-        id = bus.read_byte_data(HW_ADD, RELOAD_ADD)
+        id = 1 #bus.read_byte_data(HW_ADD, RELOAD_ADD)
         if 1 == id:
             id = 0xf0 & bus.read_byte_data(HW_ADD, CHARGE_STAT_ADD)
             if id > 0x10:
@@ -259,7 +259,7 @@ def setPowerButtonEnable(val):
     if val != 0:
         val = 1
     try:
-        id = bus.read_byte_data(HW_ADD, RELOAD_ADD)
+        id = 1#bus.read_byte_data(HW_ADD, RELOAD_ADD)
         if 1 == id:
             id = 0xf0 & bus.read_byte_data(HW_ADD, CHARGE_STAT_ADD)
             if id > 0x10:
@@ -275,7 +275,7 @@ def getPowerButtonPush():
     bus = smbus.SMBus(1)
     val = 0
     try:
-        id = bus.read_byte_data(HW_ADD, RELOAD_ADD)
+        id = 1#bus.read_byte_data(HW_ADD, RELOAD_ADD)
         if 1 == id:
             id = 0xf0 & bus.read_byte_data(HW_ADD, CHARGE_STAT_ADD)
             if id > 0x10:
@@ -303,7 +303,7 @@ def getPowerButton():
     bus = smbus.SMBus(1)
     val = 0
     try:
-        id = bus.read_byte_data(HW_ADD, RELOAD_ADD)
+        id = 1#bus.read_byte_data(HW_ADD, RELOAD_ADD)
         if 1 == id:
             id = 0xf0 & bus.read_byte_data(HW_ADD, CHARGE_STAT_ADD)
             if id > 0x10:
