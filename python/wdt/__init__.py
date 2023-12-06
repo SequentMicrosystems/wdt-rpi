@@ -1,4 +1,4 @@
-import smbus
+import smbus2
 import time
 import math
 
@@ -33,7 +33,7 @@ WDT_MAX_POWER_OFF_INTERVAL = 31 * 24 * 3600
 
 
 def getPeriod():
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     try:
         val = bus.read_word_data(HW_ADD, READ_INTERVAL_ADD)
     except Exception as e:
@@ -46,7 +46,7 @@ def setPeriod(val):
     ret = 1
     if val < 1:  # disable the watchdog
         val = 65001
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     try:
         bus.write_word_data(HW_ADD, WRITE_INTERVAL_ADD, val)
     except Exception as e:
@@ -57,7 +57,7 @@ def setPeriod(val):
 
 def reload():
     ret = 1
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     try:
         bus.write_byte_data(HW_ADD, RELOAD_ADD, RELOAD_KEY)
     except Exception as e:
@@ -69,7 +69,7 @@ def reload():
 def setDefaultPeriod(val):
     ret = 1
     if 10 < val < 65000:
-        bus = smbus.SMBus(1)
+        bus = smbus2.SMBus(1)
         try:
             bus.write_word_data(HW_ADD, WRITE_INITIAL_INTERVAL_ADD, val)
         except Exception as e:
@@ -81,7 +81,7 @@ def setDefaultPeriod(val):
 
 
 def getDefaultPeriod():
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     try:
         val = bus.read_word_data(HW_ADD, READ_INITIAL_INTERVAL_ADD)
     except Exception as e:
@@ -98,7 +98,7 @@ def setOffInterval(val):
         buff[1] = 0xff & (val >> 8)
         buff[2] = 0xff & (val >> 16)
         buff[3] = 0xff & (val >> 24)
-        bus = smbus.SMBus(1)
+        bus = smbus2.SMBus(1)
         try:
             bus.write_i2c_block_data(HW_ADD, POWER_OFF_INTERVAL_SET_ADD, buff)
         except Exception as e:
@@ -110,7 +110,7 @@ def setOffInterval(val):
 
 
 def getOffInterval():
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     try:
         buff = bus.read_i2c_block_data(HW_ADD, POWER_OFF_INTERVAL_GET_ADD, 4)
         val = buff[0] + (buff[1] << 8) + (buff[2] << 16) + (buff[3] << 24)
@@ -121,7 +121,7 @@ def getOffInterval():
 
 
 def getResetCount():
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     try:
         val = bus.read_word_data(HW_ADD, RESETS_COUNT_ADD)
     except Exception as e:
@@ -131,7 +131,7 @@ def getResetCount():
 
 
 def getVin():
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     try:
         val = bus.read_word_data(HW_ADD, V_IN_ADD)
         v = val / 1000.0
@@ -142,7 +142,7 @@ def getVin():
 
 
 def getVrasp():
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     try:
         id = 1#  bus.read_byte_data(HW_ADD, RELOAD_ADD)
         if 1 == id:
@@ -157,7 +157,7 @@ def getVrasp():
 
 
 def getVbat():
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     try:
         id = 1 # bus.read_byte_data(HW_ADD, RELOAD_ADD)
         if 1 == id:
@@ -172,7 +172,7 @@ def getVbat():
 
 
 def getTemp():
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     try:
         id = 1 #bus.read_byte_data(HW_ADD, RELOAD_ADD)
         if 1 == id:
@@ -186,7 +186,7 @@ def getTemp():
 
 
 def getChargeStat():
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     try:
         id = 1 #bus.read_byte_data(HW_ADD, RELOAD_ADD)
         if 1 == id:
@@ -200,7 +200,7 @@ def getChargeStat():
 
 
 def getRepowerOnBattery():
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     val = -1
     try:
         id = 1 #bus.read_byte_data(HW_ADD, RELOAD_ADD)
@@ -220,7 +220,7 @@ def getRepowerOnBattery():
 
 def setRepowerOnBattery(val):
     ret = -1
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     if val != 0:
         val = 0
     else:
@@ -239,7 +239,7 @@ def setRepowerOnBattery(val):
 
 
 def getPowerButtonEnable():
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     val = 0
     try:
         id = 1 #bus.read_byte_data(HW_ADD, RELOAD_ADD)
@@ -255,7 +255,7 @@ def getPowerButtonEnable():
 
 def setPowerButtonEnable(val):
     ret = -1
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     if val != 0:
         val = 1
     try:
@@ -272,7 +272,7 @@ def setPowerButtonEnable(val):
 
 
 def getPowerButtonPush():
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     val = 0
     try:
         id = 1#bus.read_byte_data(HW_ADD, RELOAD_ADD)
@@ -289,7 +289,7 @@ def getPowerButtonPush():
 def clrPowerButton():
     ret = -1
     val = 0
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     try:
         bus.write_byte_data(HW_ADD, POWER_SW_STATUS_ADD, val)
         ret = 1
@@ -300,7 +300,7 @@ def clrPowerButton():
 
 
 def getPowerButton():
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     val = 0
     try:
         id = 1#bus.read_byte_data(HW_ADD, RELOAD_ADD)
@@ -320,7 +320,7 @@ def setPowerButton(val):
         val = 0
     if val > 1:
         val = 1
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     try:
         bus.write_byte_data(HW_ADD, POWER_SW_STATUS_ADD, val)
         ret = 1
@@ -345,7 +345,7 @@ I2C_RTC_CMD_ADD = 43
 
 
 def getRTC():
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     try:
         buff = bus.read_i2c_block_data(HW_ADD, I2C_RTC_YEAR_ADD, 6)
     except Exception as e:
@@ -371,7 +371,7 @@ def setRTC(y, mo, d, h, m, s):
         raise ValueError("Invalid minute!")
     if s < 0 or s > 59:
         raise ValueError("Invalid seconds!")
-    bus = smbus.SMBus(1)
+    bus = smbus2.SMBus(1)
     buff = [int(y), int(mo), int(d), int(h), int(m), int(s), 0xaa]
     # buff[0] = int(y)
     # buff[1] = int(mo)

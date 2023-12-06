@@ -3,12 +3,15 @@ import setuptools
 setuptools.setup(
     name='SMwdt',
     packages=setuptools.find_packages(),
-    version='1.0.0',
+    version='1.0.2',
     license='MIT',
     description='Library to control Sequent Microsystems wdt Card',
     author='Sequent Microsystems',
     author_email='olcitu@gmail.com',
     url='https://sequentmicrosystems.com',
+    install_requires=[
+        "smbus2",
+        ],
     #keywords=['industrial', 'raspberry', 'power', '4-20mA', '0-10V', 'optoisolated'],
     classifiers=[
         'Development Status :: 4 - Beta',
