@@ -119,6 +119,18 @@ Set the power button push state so you can emulate the button in software or cle
  - val 0/1
 Return 1 if succeed, and -1 if fails.
 
+
+### getPowerButtonInterruptEnable()
+Getter for the power button interrupt enable.
+returns  - 1 if the interrupt will be generated when button is released, 0 else
+
+
+### setPowerButtonInterruptEnable(val)
+Setter for power button interrupt generation.
+If val = 0, disable power button interrupt generation else enable it
+The value is written in flash so is persistent.
+
+
 ### getRTC()
 Return the RTC date and time as a list
 return (year, month, day, hour, minute, seconds)

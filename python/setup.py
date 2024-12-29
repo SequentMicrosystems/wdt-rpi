@@ -3,7 +3,7 @@ import setuptools
 setuptools.setup(
     name='SMwdt',
     packages=setuptools.find_packages(),
-    version='1.0.2',
+    version='1.0.3',
     license='MIT',
     description='Library to control Sequent Microsystems wdt Card',
     author='Sequent Microsystems',

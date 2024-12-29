@@ -26,6 +26,7 @@ CHARGE_STAT_ADD = 27
 POWER_OFF_ON_BATTERY_ADD = 28
 POWER_SW_USAGE_ADD = 29
 POWER_SW_STATUS_ADD = 30
+POWER_SW_INT_OUT_ADD = 48
 
 
 
@@ -324,6 +325,39 @@ def setPowerButton(val):
     try:
         bus.write_byte_data(HW_ADD, POWER_SW_STATUS_ADD, val)
         ret = 1
+    except Exception as e:
+        ret = -1
+    bus.close()
+    return ret
+
+
+def getPowerButtonInterruptEnable():
+    bus = smbus2.SMBus(1)
+    val = 0
+    try:
+        id = 1 #bus.read_byte_data(HW_ADD, RELOAD_ADD)
+        if 1 == id:
+            id = 0xf0 & bus.read_byte_data(HW_ADD, CHARGE_STAT_ADD)
+            if id > 0x10:
+                val = bus.read_byte_data(HW_ADD, POWER_SW_INT_OUT_ADD)
+    except Exception as e:
+        val = -1
+    bus.close()
+    return val
+
+
+def setPowerButtonInterruptEnable(val):
+    ret = -1
+    bus = smbus2.SMBus(1)
+    if val != 0:
+        val = 1
+    try:
+        id = 1#bus.read_byte_data(HW_ADD, RELOAD_ADD)
+        if 1 == id:
+            id = 0xf0 & bus.read_byte_data(HW_ADD, CHARGE_STAT_ADD)
+            if id > 0x10:
+                bus.write_byte_data(HW_ADD, POWER_SW_INT_OUT_ADD, val)
+                ret = 1
     except Exception as e:
         ret = -1
     bus.close()

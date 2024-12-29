@@ -4,7 +4,7 @@
 
 #include "wdt.h"
 
-#define WDT_SOFTWARE_VER_STR  "2.04"
+#define WDT_SOFTWARE_VER_STR  "2.05"
 
 #define WDT_HW_ADD 0x30
 #define WDT_RELOAD_KEY  0xCA
@@ -29,6 +29,7 @@ char *usage = "Usage:   wdt -h/-help <command>\n"
 	"         wdt -pbe/-powerbuttonenable\n"
 	"         wdt -rtc <mon> <day> <year> <hour> <min> <sec>\n"	
 	"         wdt -bint <0/1>\n"
+	"         wdt -bc/-blockharge <0/1>"
 	"Type wdt -h <command> for more help"; // No trailing newline needed here.
 
 char *warranty =
@@ -124,6 +125,8 @@ void doHelp(int argc, char *argv[])
 				"\t             pbe/powerbuttonenable = power button enabled/disabled (1/0)\n");
 			printf(
 				"\t             pbs/powerbuttonstatus = 1 - power button has been pushed; 0 - not  \n");
+			printf(
+				"\t             bint = power button interrupt generation enabled/disabled (1/0)\n");
 			printf("\t             rtc (return RTC \"mm:dd:yyyy hh:mm:ss\"  \n");
 			printf("\t             t/temp = cpu temperature(degC)\n");
 			printf("\tExample:     wdt -g d get the wdt default period \n");
@@ -164,7 +167,14 @@ void doHelp(int argc, char *argv[])
 			printf("\tExample:     Enable interrupt generation\n");
 			printf("\t             wdt -bint 1\n");
 		}
-
+		else if (strcasecmp(argv[2], "-bc") == 0)
+				{
+					printf(
+						"\t-bc:		  Prevent charging\n");
+					printf("\tUsage:       wdt -bc <0/1>\n");
+					printf("\tExample:     Disable charging\n");
+					printf("\t             wdt -bc 1\n");
+				}
 		else
 		{
 			printf("Invalid command!\n");
