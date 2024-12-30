@@ -35,7 +35,7 @@ install: wdt
 	$Q echo "[Install]"
 	$Q cp wdt		$(DESTDIR)$(PREFIX)/bin
 ifneq ($(WIRINGPI_SUID),0)
-	$Q chown root.root	$(DESTDIR)$(PREFIX)/bin/wdt
+	$Q chown root:root	$(DESTDIR)$(PREFIX)/bin/wdt
 	$Q chmod 4755		$(DESTDIR)$(PREFIX)/bin/wdt
 endif
 #	$Q mkdir -p		$(DESTDIR)$(PREFIX)/man/man1
