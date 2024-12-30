@@ -129,6 +129,7 @@ void doHelp(int argc, char *argv[])
 				"\t             bint = power button interrupt generation enabled/disabled (1/0)\n");
 			printf("\t             rtc (return RTC \"mm:dd:yyyy hh:mm:ss\"  \n");
 			printf("\t             t/temp = cpu temperature(degC)\n");
+			printf("\t             fv = firmware version\n");
 			printf("\tExample:     wdt -g d get the wdt default period \n");
 		}
 		else if (strcasecmp(argv[2], "-rob") == 0
@@ -438,6 +439,8 @@ static int doGet(int argc, char *argv[])
 			return FAIL;
 		}
 		val = 0x01 & (readReg8(dev, I2C_POWER_SW_STATUS_ADD));
+		buff[0] = 0;
+		writeBuff(dev, I2C_POWER_SW_STATUS_ADD, buff, 1);
 		return val;
 	}
 	else if (strcasecmp(argv[2], "rtc") == 0)
@@ -475,6 +478,23 @@ static int doGet(int argc, char *argv[])
 				{
 					val = buff[0];
 				}
+			}
+		}
+	}
+	else if (strcasecmp(argv[2], "fv") == 0)
+	{
+		val = readBuff(dev, I2C_MEM_REVISION_MAJOR_ADD, buff, 2);
+		if (OK == val)
+		{
+			if (buff[0] < 3)
+			{
+				printf("Not available for this hardware version!\n");
+
+			}
+			else
+			{
+				printf ("%d.",(int)buff[0]);
+				val = buff[1];
 			}
 		}
 	}
