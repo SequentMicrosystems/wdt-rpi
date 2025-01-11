@@ -54,6 +54,12 @@ enum
 	I2C_MEM_REVISION_MAJOR_ADD,
 	I2C_MEM_REVISION_MINOR_ADD,
 	I2C_POWER_SW_INT_OUT,
+	I2C_STOP_CHARGE,
+	I2C_MULTI_CHEM_CARD,
+	I2C_SEL_CHEMESTRY,
+	I2C_CHARGE_END_MV,//two bytes in mV (charger end charge voltage)
+	I2C_BATTERY_UVLO  = I2C_CHARGE_END_MV + 2, // battery undr vloltage cutoff threshold
+
 	SLAVE_BUFF_SIZE
 };
 

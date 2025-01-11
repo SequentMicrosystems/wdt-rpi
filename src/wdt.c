@@ -4,7 +4,7 @@
 
 #include "wdt.h"
 
-#define WDT_SOFTWARE_VER_STR  "2.05"
+#define WDT_SOFTWARE_VER_STR  "2.06"
 
 #define WDT_HW_ADD 0x30
 #define WDT_RELOAD_KEY  0xCA
@@ -29,7 +29,9 @@ char *usage = "Usage:   wdt -h/-help <command>\n"
 	"         wdt -pbe/-powerbuttonenable\n"
 	"         wdt -rtc <mon> <day> <year> <hour> <min> <sec>\n"	
 	"         wdt -bint <0/1>\n"
-	"         wdt -bc/-blockharge <0/1>"
+	"         wdt -bc/-blockharge <0/1>\n"
+	"         wdt -buv [500..4000]\n"
+	"         wdt -chsel [0..7]\n"
 	"Type wdt -h <command> for more help"; // No trailing newline needed here.
 
 char *warranty =
@@ -130,6 +132,8 @@ void doHelp(int argc, char *argv[])
 			printf("\t             rtc (return RTC \"mm:dd:yyyy hh:mm:ss\"  \n");
 			printf("\t             t/temp = cpu temperature(degC)\n");
 			printf("\t             fv = firmware version\n");
+			printf("\t             ecv - end charge voltage (mV)\n");
+			printf("\t             buv = battery under voltage thereshold \n");			
 			printf("\tExample:     wdt -g d get the wdt default period \n");
 		}
 		else if (strcasecmp(argv[2], "-rob") == 0
@@ -169,13 +173,29 @@ void doHelp(int argc, char *argv[])
 			printf("\t             wdt -bint 1\n");
 		}
 		else if (strcasecmp(argv[2], "-bc") == 0)
-				{
-					printf(
-						"\t-bc:		  Prevent charging\n");
-					printf("\tUsage:       wdt -bc <0/1>\n");
-					printf("\tExample:     Disable charging\n");
-					printf("\t             wdt -bc 1\n");
-				}
+		{
+			printf(
+				"\t-bc:		  Prevent charging\n");
+			printf("\tUsage:       wdt -bc <0/1>\n");
+			printf("\tExample:     Disable charging\n");
+			printf("\t             wdt -bc 1\n");
+		}
+		else if (strcasecmp(argv[2], "-buv") == 0)
+		{
+			printf(
+				"\t-buv:		  Set battery undervoltage threshold in mV\n");
+			printf("\tUsage:       wdt -buv [800,40000]\n");
+			printf("\tExample:     Set the undervoltage threshold at 2.8V \n");
+			printf("\t             wdt -buv 2800\n");
+		}
+		else if (strcasecmp(argv[2], "-chsel") == 0)
+		{
+			printf(
+				"\t-chsel:		  Select charger chemestry (for multichemestry version only), check end charge voltage (wdt -g ecv)\n");
+			printf("\tUsage:       wdt -chsel [0..7]\n");
+			printf("\tExample:     Set the liIon with 4.2V end of charge voltage \n");
+			printf("\t             wdt -chsel 5\n");
+		}
 		else
 		{
 			printf("Invalid command!\n");
@@ -498,6 +518,46 @@ static int doGet(int argc, char *argv[])
 			}
 		}
 	}
+	else if (strcasecmp(argv[2], "ecv") == 0)
+	{
+		val = readBuff(dev, I2C_MEM_REVISION_MAJOR_ADD, buff, 1);
+		if (OK == val)
+		{
+			if (buff[0] < 5)
+			{
+				printf("Not available for this firmware version!\n");
+
+			}
+			else
+			{
+				val = readBuff(dev, I2C_CHARGE_END_MV, buff, 2);
+				if (OK == val)
+				{
+					memcpy(&val, buff, 2);
+				}
+			}
+		}
+	}
+	else if (strcasecmp(argv[2], "buv") == 0)
+	{
+		val = readBuff(dev, I2C_MEM_REVISION_MAJOR_ADD, buff, 1);
+		if (OK == val)
+		{
+			if (buff[0] < 5)
+			{
+				printf("Not available for this firmware version!\n");
+
+			}
+			else
+			{
+				val = readBuff(dev, I2C_BATTERY_UVLO, buff, 2);
+				if (OK == val)
+				{
+					memcpy(&val, buff, 2);
+				}
+			}
+		}
+	}
 	else
 	{
 		printf("Invalid  option for -get command\n");
@@ -636,7 +696,7 @@ static int doSetButtonInt(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		printf("Invalid number of arguments usage: wdt -rtc <0/1>\n");
+		printf("Invalid number of arguments usage: wdt -bint <0/1>\n");
 		return FAIL;
 	}
 	dev = doBoardInit(WDT_HW_ADD, &bType);
@@ -661,11 +721,118 @@ static int doSetButtonInt(int argc, char *argv[])
 	val = atoi(argv[2]);
 	if (val < 0 || val > 1)
 	{
-		printf("Invalid argument value usage: wdt -rtc <0/1>\n");
+		printf("Invalid argument value usage: wdt -bint <0/1>\n");
 		return FAIL;
 	}
 	buff[0] = (uint8_t)val;
 	return writeBuff(dev, I2C_POWER_SW_INT_OUT, buff, 1);
+}
+
+static int doBlockCharge(int argc, char *argv[])
+{
+	int dev = 0;
+	int val = 0;
+	u8 bType = 0;
+	uint8_t buff[8];
+
+	if (argc != 3)
+	{
+		printf("Invalid number of arguments usage: wdt -bc <0/1>\n");
+		return FAIL;
+	}
+	dev = doBoardInit(WDT_HW_ADD, &bType);
+	if (dev <= 0)
+	{
+		return FAIL;
+	}
+	val = readReg8(dev, I2C_CHARGE_STAT_ADD);
+	if ( (val & 0xf0) <= 0x10)
+	{
+		printf("Not available on this firmware version!\n");
+		return FAIL;
+	}
+	val = readReg8(dev, I2C_MEM_REVISION_MAJOR_ADD);
+	{
+		if (val < 3)
+		{
+			printf("Not available on this firmware version!\n");
+			return FAIL;
+		}
+	}
+	val = atoi(argv[2]);
+	if (val < 0 || val > 1)
+	{
+		printf("Invalid argument value usage: wdt -bc <0/1>\n");
+		return FAIL;
+	}
+	buff[0] = (uint8_t)val;
+	return writeBuff(dev, I2C_STOP_CHARGE, buff, 1);
+}
+
+static int doUndervoltage(int argc, char *argv[])
+{
+	int dev = 0;
+	int val = 0;
+	u8 bType = 0;
+
+	if (argc != 3)
+	{
+		printf("Invalid number of arguments\n");
+		return FAIL;
+	}
+
+	dev = doBoardInit(WDT_HW_ADD, &bType);
+	if (dev <= 0)
+	{
+		return FAIL;
+	}
+	val = atoi(argv[2]);
+	if ( (500 < val) && (val <= 4000))
+	{
+		return writeReg16(dev, I2C_BATTERY_UVLO, val);
+	}
+	printf("Battery under voltage threshold must be from 500mV to 4V\n"); 
+	
+	return FAIL;
+}
+
+static int doChemSel(int argc, char *argv[])
+{
+	int dev = 0;
+	int val = 0;
+	u8 bType = 0;
+	u8 buff[2];
+
+	if (argc != 3)
+	{
+		printf("Invalid number of arguments\n");
+		return FAIL;
+	}
+
+	dev = doBoardInit(WDT_HW_ADD, &bType);
+	if (dev <= 0)
+	{
+		return FAIL;
+	}
+	
+	val = readBuff(dev, I2C_MULTI_CHEM_CARD, buff, 1);
+	if (OK == val)
+	{
+		if (buff[0] < 1)
+		{
+			printf("Available for Multichemestry card only!\n");
+			return FAIL;
+		}
+			
+		val = atoi(argv[2]);
+		if ( (val >= 0) && (val < 8))
+		{
+			return writeReg8(dev, I2C_SEL_CHEMESTRY, val);
+		}
+		printf("Chemestry type available from 0 to 7 including\n");
+	}
+	
+	return FAIL;
 }
 
 int main(int argc, char *argv[])
@@ -756,7 +923,18 @@ int main(int argc, char *argv[])
 	{
 		return doSetButtonInt(argc, argv);
 	}
-
+	if (strcasecmp(argv[1], "-bc") == 0 || strcasecmp(argv[1], "-blockharge") == 0)
+	{
+		return doBlockCharge(argc, argv);
+	}
+	if (strcasecmp(argv[1], "-buv") == 0)
+	{
+		return doUndervoltage(argc, argv);
+	}
+	if (strcasecmp(argv[1], "-chsel") == 0)
+	{
+		return doChemSel(argc, argv);
+	}
 	printf("Invalid argument(s)!\n");
 	printf("%s\n", usage);
 	return FAIL;
