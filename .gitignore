@@ -1,6 +1,9 @@
+# C build
+build
+*.o
+wdt
 
 #python build dirs
-
 /python/build/
 /python/dist/
 /python/*.egg-info/
