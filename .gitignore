@@ -3,4 +3,5 @@
 
 /python/build/
 /python/dist/
-/python/SMwdt.egg-info/
+/python/*.egg-info/
+
